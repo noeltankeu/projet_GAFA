@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "";
+  src: url();
+}
+body {
+  font-family: Arial, Verdana;
+}
+
+.container .image {
+  height: 480px;
+  margin-left: 10rem;
+}
+.container .form-container {
+  display: grid;
+  margin-top: 18rem;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: "f1 f2";
+}
+.container .form-container .form-left {
+  grid-area: f1;
+  margin-left: 4rem;
+  border: 1px solid grey;
+}
+.container .form-container .form-left span {
+  text-align: left;
+  font-size: 2.3rem;
+}
+.container .form-container .form-left p {
+  font-size: 1rem;
+}
+.container .form-container .form-left input {
+  height: 1.6rem;
+  width: 68%;
+}
+.container .form-container .form-left button {
+  width: 68.5%;
+  height: 42px;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+}
+.container .form-container .form-right {
+  grid-area: f2;
+}
+.container .directors p {
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+.container .directors #services {
+  margin-top: 10px;
+  font-size: 2.3rem;
+}
+.container .directors img {
+  margin-left: 32.3rem;
+  margin-top: 5rem;
+  width: 20%;
+  height: 146px;
+}
+.container .directors #nom {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.container .directors #poste {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.container .directors #contact {
+  font-size: 1rem;
+  margin-top: 60px;
+  text-align: center;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=donate.css.map */
