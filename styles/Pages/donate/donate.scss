@@ -2,12 +2,8 @@
 @import "../../layouts/nav";
 @import "../../layouts/footer";
 
-@font-face {
-    font-family: "";
-    src: url();
-}
 body{
-    font-family: Arial,Verdana;
+    font-family:Arial,Verdana;
 }
 .container{
     .image{
@@ -27,6 +23,7 @@ body{
             span{
                 text-align: left;
                 font-size: 2.3rem;
+                font-family: Impact;
             }
             p{
                 font-size: 1rem;
