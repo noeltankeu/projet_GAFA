@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 20vh;
+    margin: 0 auto;
+    h2{
+        font-family: "allura",sans-serif;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        width: 70%;
+        li{
+         margin-left: 20px; 
+         a{
+            &:hover{
+                transition: 0.3s;
+                cursor: pointer;
+                font-weight: bold; 
+             }
+         }   
+        }
+    }
+}

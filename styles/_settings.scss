@@ -1,17 +1,28 @@
 $color-body : white;
+$color-foot : rgba(245, 245, 220, 0.589);
+
+@font-face {
+    font-family: "allura";
+    src: url(../fonts/Allura-Regular.ttf);
+}
 
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 body{
     min-height: 100vh;
-    list-style: none;
+    
 }
 
+ul{
+    list-style: none;
+}
 a{
-    text-decoration: none;
+    text-decoration: none; 
+    color: rgba(0, 0, 0, 0.5);
 }
 
 

@@ -1,0 +1,22 @@
+footer{
+    height: 400px;
+    width: 95%;
+    background-color: $color-foot ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
