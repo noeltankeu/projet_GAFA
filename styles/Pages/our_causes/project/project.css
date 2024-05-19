@@ -60,15 +60,6 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-button {
-  padding: 10px;
-  text-transform: uppercase;
-  color: white;
-  background-color: black;
-  width: 15%;
-  letter-spacing: 3px;
-}
-
 footer {
   height: 400px;
   width: 95%;
@@ -101,110 +92,74 @@ footer p {
   text-align: center;
 }
 
-.head {
-  background: url(../../../images/focal-point.jpg) center/cover;
-  height: 100vh;
-  width: 95%;
-  margin: 0 auto;
-}
-
-.but_head p {
-  text-align: center;
-  margin: 50px auto 0 auto;
-  width: 95%;
-  min-height: 200px;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  line-height: 2.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.paragraphe {
-  width: 95%;
-  margin: 50px auto 0 auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  min-height: 400px;
-}
-.paragraphe p {
-  width: 85%;
-  text-align: center;
-  margin: 30px auto 0;
-  line-height: 1.5rem;
-}
-
-.services {
-  width: 95%;
-  margin: 0 auto;
-}
-.services h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 0.7rem;
-  margin-top: 50px;
+button {
+  padding: 10px;
   text-transform: uppercase;
-  word-spacing: 3px;
+  color: white;
+  background-color: black;
+  width: 15%;
+  letter-spacing: 3px;
 }
-.services h3 {
+
+.header-container {
+  width: 95%;
+  background: black;
+  min-height: 50vh;
+  height: 68vh;
+  max-height: 70vh;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2rem;
-  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.services .sercivecadre {
-  margin-bottom: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "z1 z2 z3" "z4 z5 z6";
+
+.header-content {
+  width: 70%;
+  margin: 0 auto;
 }
-.services .sercivecadre .support {
-  grid-area: z1;
-  margin: 10px;
+.header-content p {
+  color: white;
+  font-size: 4.5rem;
 }
-.services .sercivecadre .stategy {
-  grid-area: z2;
-  margin: 10px;
-}
-.services .sercivecadre .Management {
-  grid-area: z3;
-  margin: 10px 0 10px 10px;
-}
-.services .sercivecadre .Training {
-  grid-area: z4;
-  margin: 10px;
-}
-.services .sercivecadre .Consulting {
-  grid-area: z5;
-  margin: 10px;
-}
-.services .sercivecadre .Events {
-  grid-area: z6;
-  margin: 10px 0 10px 10px;
-}
-.services .sercivecadre img {
-  height: 100px;
-  width: 150px;
-  margin-top: 50px;
-}
-.services .sercivecadre h2 {
-  margin-top: 15px;
-}
-.services .sercivecadre p {
-  text-align: left;
-  margin-top: 20px;
+
+.project-container {
   width: 80%;
-}/*# sourceMappingURL=news.css.map */
+  margin: 3rem auto;
+  line-height: 2rem;
+  font-size: 20px;
+  text-align: justify;
+}
+.project-container .projects-intro {
+  text-align: center;
+}
+.project-container .projects-intro h4 {
+  padding-bottom: 0.8rem;
+  font-weight: 200;
+  color: rgb(122, 122, 125);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.project-container .projects-intro h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.project-container .project-main {
+  padding: 0 50px;
+}
+.project-container .project-main .introduction, .project-container .project-main .goals, .project-container .project-main .governance, .project-container .project-main .objectives {
+  margin-bottom: 40px;
+}
+.project-container .project-main .introduction h2, .project-container .project-main .goals h2, .project-container .project-main .governance h2, .project-container .project-main .objectives h2 {
+  color: rgb(7, 7, 6);
+  padding: 15px 0;
+}
+.project-container .project-main .introduction p, .project-container .project-main .goals p, .project-container .project-main .governance p, .project-container .project-main .objectives p {
+  color: rgb(122, 122, 125);
+  padding-left: 30px;
+}/*# sourceMappingURL=project.css.map */
