@@ -1,0 +1,107 @@
+@import "../../settings";
+@import "../../layouts/nav";
+@import "../../layouts/header";
+@import "../../components/buttons";
+@import "../../layouts/footer";
+
+.head{
+    background: url(../../../images/scientist.jpg);
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.but_head{
+    p{
+        text-align: center;
+        margin: 50px auto 0 auto;
+        width: 95%;
+        min-height: 200px;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        line-height: 3rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+.paragraphe{
+    width: 95%;
+    margin: 50px auto 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 350px;
+    p{
+        width: 70%;
+        text-align: center;
+        margin: 30px auto 0;
+        line-height: 1.5rem;
+    }
+}
+
+.services{
+    width: 95%;
+    margin: 0 auto;
+    h5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        margin-top: 50px;
+        text-transform: uppercase;
+        word-spacing: 3px;
+    }
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+    .sercivecadre{
+        margin-bottom: 30px;
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "z1 z2 z3"
+    "z4 z5 z6";
+    .support{
+        grid-area: z1;
+        margin: 20px;
+    }
+    .stategy{
+        grid-area: z2;
+        margin: 20px;
+    }
+    .Management{
+        grid-area: z3;
+        margin: 20px;
+    }
+    .Training{
+        grid-area: z4;
+        margin: 20px;
+    }
+    .Consulting{
+        grid-area: z5;
+        margin: 20px;
+    }
+    .Events{
+        grid-area: z6;
+        margin: 20px;
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+        margin-top: 50px;
+    }
+    h2{
+        margin-top: 15px;
+    }
+    p{
+        text-align: left;
+        margin-top: 20px;
+        width: 80%;
+    }
+    }   
+}

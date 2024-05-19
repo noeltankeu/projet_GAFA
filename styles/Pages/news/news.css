@@ -1,1 +1,213 @@
+<<<<<<< HEAD
 /*# sourceMappingURL=news.css.map */
+=======
+@font-face {
+  font-family: "allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 20vh;
+  margin: 0 auto;
+}
+nav h2 {
+  font-family: "allura", sans-serif;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  width: 70%;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  width: 15%;
+  letter-spacing: 3px;
+}
+
+footer {
+  height: 400px;
+  width: 95%;
+  background-color: rgba(245, 245, 220, 0.589);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+footer p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.head {
+  background: url(../../../images/scientist.jpg);
+  height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.but_head p {
+  text-align: center;
+  margin: 50px auto 0 auto;
+  width: 95%;
+  min-height: 200px;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.paragraphe {
+  width: 95%;
+  margin: 50px auto 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 350px;
+}
+.paragraphe p {
+  width: 70%;
+  text-align: center;
+  margin: 30px auto 0;
+  line-height: 1.5rem;
+}
+
+.services {
+  width: 95%;
+  margin: 0 auto;
+}
+.services h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.7rem;
+  margin-top: 50px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+}
+.services h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.services .sercivecadre {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "z1 z2 z3" "z4 z5 z6";
+}
+.services .sercivecadre .support {
+  grid-area: z1;
+  margin: 20px;
+}
+.services .sercivecadre .stategy {
+  grid-area: z2;
+  margin: 20px;
+}
+.services .sercivecadre .Management {
+  grid-area: z3;
+  margin: 20px;
+}
+.services .sercivecadre .Training {
+  grid-area: z4;
+  margin: 20px;
+}
+.services .sercivecadre .Consulting {
+  grid-area: z5;
+  margin: 20px;
+}
+.services .sercivecadre .Events {
+  grid-area: z6;
+  margin: 20px;
+}
+.services .sercivecadre img {
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+}
+.services .sercivecadre h2 {
+  margin-top: 15px;
+}
+.services .sercivecadre p {
+  text-align: left;
+  margin-top: 20px;
+  width: 80%;
+}/*# sourceMappingURL=news.css.map */
+>>>>>>> 92d37283193020e9330ae6005e20ee2e5b4bb490
