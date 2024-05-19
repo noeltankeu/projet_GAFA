@@ -13,7 +13,11 @@
 
 body {
   min-height: 100vh;
+
+  font-family: allura;
+
   font-family: Verdana, Arial;
+
 }
 
 ul {

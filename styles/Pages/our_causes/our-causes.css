@@ -128,51 +128,110 @@ button {
   font-size: 4.5rem;
 }
 
-.people-intro {
+.projects-intro {
   text-align: center;
   margin: 6rem 0;
 }
-.people-intro h4 {
+.projects-intro h4 {
   padding-bottom: 0.8rem;
   font-weight: 200;
   color: rgb(122, 122, 125);
   text-transform: uppercase;
   font-size: 0.9rem;
 }
-.people-intro h2 {
+.projects-intro h2 {
   font-size: 2.5rem;
   font-weight: 200;
 }
 
-.persons {
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
-          column-gap: 2rem;
-  margin: 0 auto;
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+  position: relative;
 }
-
-.person .person-image {
-  height: 450px;
+.project .project-main {
+  width: 80%;
+  position: relative;
 }
-.person .person-image img {
-  height: 100%;
+.project .project-main img {
+  height: 520px;
   width: 100%;
 }
-.person .person-footer {
+.project .project-main img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.project .project-main .preview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(1, 1, 1, 0.5);
+  line-height: 30px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project .project-main .preview p {
+  width: 70%;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.project .project-main .preview:hover {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: 1;
+}
+.project .project-footer {
   margin: 2rem 0;
   text-align: center;
 }
-.person .person-footer h4 {
+.project .project-footer a {
   color: black;
   font-size: 1.5rem;
-  font-weight: 300;
 }
-.person .person-footer h2 {
+.project .project-footer p {
   color: rgb(122, 122, 125);
   margin: 1rem 0;
   font-size: 1.2rem;
-  font-weight: 100;
-}/*# sourceMappingURL=become.css.map */
+}
+.project .project-description {
+  color: red;
+  position: absolute;
+  left: -999em;
+}/*# sourceMappingURL=our-causes.css.map */
