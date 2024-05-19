@@ -5,10 +5,10 @@
 @import "../../layouts/footer";
 
 .head{
-    background: url(../../../images/scientist.jpg);
+    background: url(../../../images/focal-point.jpg) center/cover;
     height: 100vh;
     width: 95%;
-    margin: 0 auto;
+   margin: 0 auto;
     
 }
 
@@ -18,9 +18,9 @@
         margin: 50px auto 0 auto;
         width: 95%;
         min-height: 200px;
-        font-size: 3rem;
-        letter-spacing: 3px;
-        line-height: 3rem;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        line-height: 2.5rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 }
@@ -29,9 +29,9 @@
     width: 95%;
     margin: 50px auto 0 auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    min-height: 350px;
+    min-height: 400px;
     p{
-        width: 70%;
+        width: 85%;
         text-align: center;
         margin: 30px auto 0;
         line-height: 1.5rem;
@@ -67,32 +67,32 @@
     "z4 z5 z6";
     .support{
         grid-area: z1;
-        margin: 20px;
+        margin: 10px;
     }
     .stategy{
         grid-area: z2;
-        margin: 20px;
+        margin: 10px;
     }
     .Management{
         grid-area: z3;
-        margin: 20px;
+        margin: 10px 0 10px 10px;
     }
     .Training{
         grid-area: z4;
-        margin: 20px;
+        margin: 10px;
     }
     .Consulting{
         grid-area: z5;
-        margin: 20px;
+        margin: 10px;
     }
     .Events{
         grid-area: z6;
-        margin: 20px;
+        margin: 10px 0 10px 10px;
     }
 
     img{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 150px;
         margin-top: 50px;
     }
     h2{
