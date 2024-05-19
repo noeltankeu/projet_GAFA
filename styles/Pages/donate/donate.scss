@@ -27,7 +27,7 @@ body {
       //padding-bottom: 30px;
       span {
         text-align: left;
-        font-size: 2.3rem;
+        font-size: 1.9rem;
         font-family: Impact;
       }
       p {
@@ -67,8 +67,10 @@ body {
     }
   }
   .directors {
+    background-color: whitesmoke;
     p {
       margin-top: 2rem;
+      padding-top: 15px;
       text-align: center;
       letter-spacing: 1px;
       font-size: 0.7rem;

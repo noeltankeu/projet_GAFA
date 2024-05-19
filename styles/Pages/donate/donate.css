@@ -101,7 +101,7 @@ body {
 }
 .container .form-container .form-left span {
   text-align: left;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   font-family: Impact;
 }
 .container .form-container .form-left p {
@@ -137,8 +137,12 @@ body {
   margin-left: 10rem;
   width: 80%;
 }
+.container .directors {
+  background-color: whitesmoke;
+}
 .container .directors p {
   margin-top: 2rem;
+  padding-top: 15px;
   text-align: center;
   letter-spacing: 1px;
   font-size: 0.7rem;

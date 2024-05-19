@@ -1,0 +1,28 @@
+@import "../../settings";
+@import "../../layouts/nav";
+@import "../../layouts/footer";
+@import "../../components/buttons";
+
+body {
+  background-color: whitesmoke;
+}
+.container {
+  img {
+    margin-left: 2rem;
+    width: 95%;
+  }
+  div {
+    margin: 5rem 10rem 5rem 15rem;
+    text-align: left;
+    font-family: Arial;
+    p {
+      color: grey;
+      margin-top: 20px;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+  }
+  span {
+    font-size: 1.9rem;
+  }
+}

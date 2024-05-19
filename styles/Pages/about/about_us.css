@@ -1,1 +1,103 @@
-/*# sourceMappingURL=about_us.css.map */
+@font-face {
+  font-family: "allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 20vh;
+  margin: 0 auto;
+}
+nav h2 {
+  font-family: "allura", sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  width: 70%;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  height: 400px;
+  width: 95%;
+  background-color: rgba(245, 245, 220, 0.589);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+footer p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  line-height: 30px;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  width: 15%;
+  letter-spacing: 3px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container img {
+  margin-left: 2rem;
+  width: 95%;
+}
+.container div {
+  margin: 5rem 10rem 5rem 15rem;
+  text-align: left;
+  font-family: Arial;
+}
+.container div p {
+  color: grey;
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+.container span {
+  font-size: 1.9rem;
+}/*# sourceMappingURL=about_us.css.map */
