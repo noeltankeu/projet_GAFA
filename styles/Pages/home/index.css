@@ -5,10 +5,16 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
   min-height: 100vh;
+
+  font-family: Verdana, Arial;
 }
 
 ul {
@@ -34,10 +40,17 @@ nav {
   height: 20vh;
   margin: 0 auto;
 }
-nav h2 {
-  font-family: "allura", sans-serif;
+@media screen and (max-width: 768px) {
+  nav .nav-list li {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  nav h2 {
+    font-size: 1.2rem;
+  }
 }
-nav ul {
+nav .nav-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,25 +60,50 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  width: 70%;
 }
-nav ul li {
+nav .nav-list ul li {
   margin-left: 20px;
 }
-nav ul li a:hover {
+nav .nav-list ul li:first-child {
+  color: blue;
+}
+nav .nav-list ul li a:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
   font-weight: bold;
+  color: blue;
+}
+nav h2 {
+  font-family: "allura";
+  font-weight: bold;
+}
+nav i {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -200px;
+}
+@media screen and (max-width: 768px) {
+  nav #cont {
+    display: none;
+  }
 }
 
 button {
-  padding: 10px;
+  padding: 15px;
   text-transform: uppercase;
   color: white;
-  background-color: black;
-  width: 15%;
-  letter-spacing: 3px;
+  background-color: blue;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 footer {
@@ -212,7 +250,7 @@ footer p {
   text-align: center;
   position: absolute;
   top: 400px;
-  left: 150px;
+  left: 100px;
   color: white;
 }
 .container .text h1 {
@@ -226,6 +264,18 @@ footer p {
   margin: 50px 0;
   color: white;
   font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .container .text {
+    left: 50px;
+  }
+  .container .text h1 {
+    font-size: 2rem;
+    word-spacing: 1px;
+  }
+  .container .text .but {
+    display: block;
+  }
 }
 .container .para {
   margin: 50px auto;
@@ -248,7 +298,16 @@ footer p {
   grid-template-columns: 40% 60%;
 }
 .container .about .test-about {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .container .about .test-about h5 {
   text-transform: uppercase;
@@ -283,6 +342,16 @@ footer p {
 }
 .container .team .test-team {
   margin: 0 0 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .container .team .test-team h5 {
   text-transform: uppercase;
@@ -300,13 +369,14 @@ footer p {
   line-height: 1.5rem;
 }
 .container .main-buttom {
-  margin-top: 100px;
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .container .main-buttom .company h5 {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  margin-bottom: 15px;
+  margin: 50px 15px 15px 15px;
 }
 .container .main-buttom .company h3 {
   text-transform: capitalize;
@@ -323,8 +393,8 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
+  width: 80%;
 }
 .container .main-buttom .main-but-contain h4 {
   text-transform: capitalize;
@@ -339,5 +409,6 @@ footer p {
   margin-bottom: 10px;
 }
 .container .main-buttom .main-but-contain p {
-  width: 80%;
+  width: 100%;
+  padding-right: 50px;
 }/*# sourceMappingURL=index.css.map */

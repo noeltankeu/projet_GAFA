@@ -1,5 +1,9 @@
 $color-body : white;
 $color-foot : rgba(245, 245, 220, 0.589);
+$color-gold : gold;
+$color-blue : blue;
+$color-ultramarine : rgba(0, 0, 255, 0.425);
+
 
 @font-face {
     font-family: "allura";
@@ -9,12 +13,16 @@ $color-foot : rgba(245, 245, 220, 0.589);
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
 }
 
 body{
     min-height: 100vh;
-    
+    font-family: Verdana, Arial;
+
 }
 
 ul{
