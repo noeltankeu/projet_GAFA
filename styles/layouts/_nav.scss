@@ -5,24 +5,63 @@ nav{
     width: 95%;
     height: 20vh;
     margin: 0 auto;
-    h2{
-        font-family: "allura",sans-serif;
+
+    @media screen and (max-width:768px){
+        .nav-list{
+            li{
+                margin-left: 5px; 
+                font-size: 0.8rem;
+                text-align: center;
+            }
+        }
+        h2{
+            font-size: 1.2rem;
+        }
     }
-    ul{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-transform: uppercase;
-        width: 70%;
-        li{
-         margin-left: 20px; 
-         a{
-            &:hover{
-                transition: 0.3s;
-                cursor: pointer;
-                font-weight: bold; 
-             }
-         }   
+    @media screen and (max-width:668px){
+        
+    }
+    @media screen and (max-width:320px){
+        
+    }
+    .nav-list{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-transform: uppercase;
+            li{
+             margin-left: 20px;
+
+             &:first-child{
+                color: blue; 
+             }  
+             a{
+                &:hover{
+                    transition: 0.3s;
+                    cursor: pointer;
+                    font-weight: bold;
+                    color: blue; 
+                 }
+             } 
+              
+            }
+        }
+    }
+    h2{
+        font-family: "allura";
+        font-weight: bold;
+    }
+    i{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -200px;
+    }
+    @media screen and (max-width:768px){
+        #cont{
+           display: none;
         }
     }
 }
+
