@@ -5,19 +5,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
 
 body {
   min-height: 100vh;
-
-  font-family: allura;
-
   font-family: Verdana, Arial;
-
 }
 
 ul {
@@ -30,15 +25,9 @@ a {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 95%;
   height: 20vh;
   margin: 0 auto;
@@ -54,14 +43,9 @@ nav {
   }
 }
 nav .nav-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   text-transform: uppercase;
 }
 nav .nav-list ul li {
@@ -71,7 +55,6 @@ nav .nav-list ul li:first-child {
   color: blue;
 }
 nav .nav-list ul li a:hover {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
   font-weight: bold;
@@ -101,12 +84,10 @@ button {
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 button:hover {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 footer {
@@ -114,19 +95,10 @@ footer {
   width: 95%;
   background-color: rgba(245, 245, 220, 0.589);
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 footer h2 {
   font-size: 30px;
@@ -177,32 +149,20 @@ footer p {
   margin: 0 auto;
 }
 .services h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 0.7rem;
   margin-top: 50px;
   text-transform: uppercase;
   word-spacing: 3px;
 }
 .services h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
   margin-top: 15px;
+  margin-left: 12rem;
+  width: 70%;
 }
 .services .sercivecadre {
   margin-bottom: 30px;

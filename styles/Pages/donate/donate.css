@@ -1,1 +1,217 @@
-/*# sourceMappingURL=donate.css.map */
+@font-face {
+  font-family: "allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Verdana, Arial;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 20vh;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-list li {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  nav h2 {
+    font-size: 1.2rem;
+  }
+}
+nav .nav-list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav .nav-list ul li {
+  margin-left: 20px;
+}
+nav .nav-list ul li:first-child {
+  color: blue;
+}
+nav .nav-list ul li a:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+  color: blue;
+}
+nav h2 {
+  font-family: "allura";
+  font-weight: bold;
+}
+nav i {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -200px;
+}
+@media screen and (max-width: 768px) {
+  nav #cont {
+    display: none;
+  }
+}
+
+footer {
+  height: 400px;
+  width: 95%;
+  background-color: rgba(245, 245, 220, 0.589);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+footer p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  line-height: 30px;
+  text-align: center;
+}
+
+button {
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: blue;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(0.5);
+}
+
+body {
+  font-family: Arial, Verdana;
+}
+
+.container img {
+  margin-left: 2rem;
+  width: 95%;
+}
+.container .form-container {
+  display: grid;
+  margin-top: 10rem;
+  grid-template-columns: 60% 30%;
+  grid-template-areas: "f1 f2";
+}
+.container .form-container .form-left {
+  grid-area: f1;
+  margin-left: 1.9rem;
+  border: 1px solid grey;
+  padding: 40px 25px 30px 40px;
+}
+.container .form-container .form-left span {
+  text-align: left;
+  font-size: 1.9rem;
+  font-family: Impact;
+}
+.container .form-container .form-left p {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.container .form-container .form-left input {
+  height: 1.9rem;
+  width: 94%;
+  margin-top: 10px;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+.container .form-container .form-left input:focus {
+  border: 2px solid rgba(245, 245, 220, 0.589);
+}
+.container .form-container .form-left textarea {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+.container .form-container .form-left button {
+  width: 96%;
+  height: 42px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 1px;
+}
+.container .form-container .form-right {
+  grid-area: f2;
+  margin-left: 10rem;
+  width: 80%;
+}
+.container iframe {
+  width: 95%;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.container .directors {
+  background-color: whitesmoke;
+}
+.container .directors p {
+  margin-top: 2rem;
+  padding-top: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+.container .directors #services {
+  margin-top: 10px;
+  margin-left: 12rem;
+  font-size: 1.5rem;
+  width: 70%;
+}
+.container .directors img {
+  margin-left: 32.5rem;
+  margin-top: 3rem;
+  width: 20%;
+  height: 146px;
+}
+.container .directors #nom {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.container .directors #poste {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.container .directors #contact {
+  font-size: 1rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=donate.css.map */
