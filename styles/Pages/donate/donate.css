@@ -121,17 +121,60 @@ body {
   margin-left: 2rem;
   width: 95%;
 }
+@media screen and (max-width: 320px) {
+  .container img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .container img {
+    margin: 0;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 96%;
+  }
+}
 .container .form-container {
   display: grid;
   margin-top: 10rem;
   grid-template-columns: 60% 30%;
   grid-template-areas: "f1 f2";
 }
+@media screen and (max-width: 320px) {
+  .container .form-container {
+    margin: 0;
+    margin-top: 5rem;
+    grid-template-areas: "f1" "f2";
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .form-container {
+    margin-top: 5rem;
+    grid-template-areas: "f1" "f2";
+  }
+}
 .container .form-container .form-left {
   grid-area: f1;
   margin-left: 1.9rem;
   border: 1px solid grey;
   padding: 40px 25px 30px 40px;
+}
+@media screen and (max-width: 320px) {
+  .container .form-container .form-left {
+    margin-left: 10rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .form-container .form-left {
+    margin-left: 10rem;
+    width: 100%;
+  }
 }
 .container .form-container .form-left span {
   text-align: left;
@@ -159,6 +202,16 @@ body {
   padding-left: 10px;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 768px) {
+  .container .form-container .form-left textarea {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .container .form-container .form-left textarea {
+    width: 30%;
+  }
+}
 .container .form-container .form-left button {
   width: 96%;
   height: 42px;
@@ -172,10 +225,25 @@ body {
   margin-left: 10rem;
   width: 80%;
 }
+@media screen and (max-width: 768px) {
+  .container .form-container .form-right {
+    margin-top: 6rem;
+    text-align: center;
+    margin-left: 10.7rem;
+    width: 94%;
+  }
+}
 .container iframe {
   width: 95%;
   margin-top: 4rem;
   margin-left: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .container iframe {
+    width: 96%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 .container .directors {
   background-color: whitesmoke;
@@ -193,11 +261,23 @@ body {
   font-size: 1.5rem;
   width: 70%;
 }
+@media screen and (max-width: 768px) {
+  .container .directors #services {
+    margin-left: 7rem;
+  }
+}
 .container .directors img {
   margin-left: 32.5rem;
   margin-top: 3rem;
   width: 20%;
   height: 146px;
+}
+@media screen and (max-width: 768px) {
+  .container .directors img {
+    width: 40%;
+    height: 220px;
+    margin-left: 13.9rem;
+  }
 }
 .container .directors #nom {
   font-size: 1.7rem;
