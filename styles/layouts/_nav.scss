@@ -3,7 +3,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    height: 20vh;
+    height: 15vh;
     margin: 0 auto;
 
     @media screen and (max-width:768px){
@@ -49,8 +49,8 @@ nav{
         }
     }
     h2{
-        font-family: "allura";
         font-weight: bold;
+        font-family: "allura";
     }
     i{
         position: absolute;

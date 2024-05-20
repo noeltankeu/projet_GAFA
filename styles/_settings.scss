@@ -1,8 +1,8 @@
 $color-body : white;
-$color-foot : rgba(245, 245, 220, 0.589);
-$color-gold : gold;
-$color-blue : blue;
-$color-ultramarine : rgba(0, 0, 255, 0.425);
+$color-foot : rgb(245, 245, 245);
+$color-gold : rgb(255,223,0);
+$color-blue : rgb(4,55,242) ;
+
 
 
 @font-face {
@@ -16,7 +16,6 @@ $color-ultramarine : rgba(0, 0, 255, 0.425);
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-
 }
 
 body{
@@ -32,7 +31,6 @@ a{
     text-decoration: none; 
     color: rgba(0, 0, 0, 0.5);
 }
-
 
 @mixin centerchild{
     display: flex;

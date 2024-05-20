@@ -1,5 +1,6 @@
 footer{
-    height: 400px;
+
+    height: 465px;
     width: 95%;
     background-color: $color-foot ;
     margin: 0 auto;
@@ -7,16 +8,40 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
     h2{
-        font-size: 30px;
-        letter-spacing: 3px;
+        font-size: 3rem;
+        letter-spacing: 2px;
         margin-bottom: 30px;
     }
     p{
-        font-size: 20px;
-        letter-spacing: 2px;
-        margin-bottom: 50px;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
         line-height: 30px;
         text-align: center;
+    }
+    .partner{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        h5{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        .img-foot{
+            img{
+                margin-right: 15px;
+                width: 80px;
+                height: 80px;
+                transition: 0.3s;
+                &:hover{
+                    transform: scale(1.5);
+                }
+            }
+        }
+        
     }
 }

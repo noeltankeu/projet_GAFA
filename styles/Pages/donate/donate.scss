@@ -1,0 +1,113 @@
+@import "../../settings";
+@import "../../layouts/nav";
+@import "../../layouts/footer";
+@import "../../components/buttons";
+
+body {
+  font-family: Arial, Verdana;
+}
+.container {
+  img {
+    margin-left: 2rem;
+    width: 95%;
+  }
+  .form-container {
+    display: grid;
+    margin-top: 10rem;
+    grid-template-columns: 60% 30%;
+    grid-template-areas: "f1 f2";
+    .form-left {
+      grid-area: f1;
+      margin-left: 1.9rem;
+      border: 1px solid grey;
+      padding: 40px 25px 30px 40px;
+      //padding-top: 30px;
+      //padding-left: 40px;
+      //padding-bottom: 30px;
+      span {
+        text-align: left;
+        font-size: 1.9rem;
+        font-family: Impact;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+      input {
+        height: 1.9rem;
+        width: 94%;
+        margin-top: 10px;
+        font-size: 1rem;
+        padding-left: 10px;
+
+        &:focus {
+          border: 2px solid $color-foot;
+        }
+      }
+      textarea {
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 0.9rem;
+      }
+      button {
+        width: 96%;
+        height: 42px;
+        background-color: black;
+        cursor: pointer;
+        color: white;
+        letter-spacing: 1px;
+      }
+    }
+    .form-right {
+      grid-area: f2;
+      margin-left: 10rem;
+      width: 80%;
+    }
+  }
+
+  iframe {
+    width: 95%;
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  .directors {
+    background-color: whitesmoke;
+    p {
+      margin-top: 2rem;
+      padding-top: 15px;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 0.7rem;
+    }
+    #services {
+      margin-top: 10px;
+      margin-left: 12rem;
+      font-size: 1.5rem;
+      width: 70%;
+    }
+    img {
+      margin-left: 32.5rem;
+      margin-top: 3rem;
+      width: 20%;
+      height: 146px;
+    }
+    #nom {
+      font-size: 1.7rem;
+      text-align: center;
+      margin-top: 10px;
+    }
+    #poste {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+    #contact {
+      font-size: 1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+  }
+}

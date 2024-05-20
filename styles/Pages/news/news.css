@@ -13,11 +13,7 @@
 
 body {
   min-height: 100vh;
-
-  font-family: allura;
-
   font-family: Verdana, Arial;
-
 }
 
 ul {
@@ -40,7 +36,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
-  height: 20vh;
+  height: 15vh;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -78,8 +74,8 @@ nav .nav-list ul li a:hover {
   color: blue;
 }
 nav h2 {
-  font-family: "allura";
   font-weight: bold;
+  font-family: "allura";
 }
 nav i {
   position: absolute;
@@ -97,7 +93,7 @@ button {
   padding: 15px;
   text-transform: uppercase;
   color: white;
-  background-color: blue;
+  background-color: rgb(4, 55, 242);
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
@@ -110,9 +106,9 @@ button:hover {
 }
 
 footer {
-  height: 400px;
+  height: 465px;
   width: 95%;
-  background-color: rgba(245, 245, 220, 0.589);
+  background-color: rgb(245, 245, 245);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,23 +123,51 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 2rem;
 }
 footer h2 {
-  font-size: 30px;
-  letter-spacing: 3px;
+  font-size: 3rem;
+  letter-spacing: 2px;
   margin-bottom: 30px;
 }
 footer p {
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin-bottom: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
   line-height: 30px;
   text-align: center;
+}
+footer .partner {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+footer .partner h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+footer .partner .img-foot img {
+  margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .partner .img-foot img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .head {
   background: url(../../../images/focal-point.jpg) center/cover;
-  height: 100vh;
+  height: 480px;
   width: 95%;
   margin: 0 auto;
 }
@@ -152,18 +176,15 @@ footer p {
   text-align: center;
   margin: 50px auto 0 auto;
   width: 95%;
-  min-height: 200px;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  line-height: 2.5rem;
+  min-height: 150px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .paragraphe {
   width: 95%;
-  margin: 50px auto 0 auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  min-height: 400px;
+  margin: 50px auto 50px auto;
 }
 .paragraphe p {
   width: 85%;
@@ -173,8 +194,24 @@ footer p {
 }
 
 .services {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   width: 95%;
   margin: 0 auto;
+}
+.services .impro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .services h5 {
   display: -webkit-box;
@@ -192,20 +229,14 @@ footer p {
   word-spacing: 3px;
 }
 .services h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
   margin-top: 15px;
+  width: 80%;
 }
 .services .sercivecadre {
-  margin-bottom: 30px;
+  width: 70%;
+  margin: 0 auto 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -213,31 +244,31 @@ footer p {
 }
 .services .sercivecadre .support {
   grid-area: z1;
-  margin: 10px;
+  margin: 10px 50px 0 0;
 }
 .services .sercivecadre .stategy {
   grid-area: z2;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
 }
 .services .sercivecadre .Management {
   grid-area: z3;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 0 50px;
 }
 .services .sercivecadre .Training {
   grid-area: z4;
-  margin: 10px;
+  margin: 0 50px 10px 0;
 }
 .services .sercivecadre .Consulting {
   grid-area: z5;
-  margin: 10px;
+  margin: 0 10px 10px 10px;
 }
 .services .sercivecadre .Events {
   grid-area: z6;
-  margin: 10px 0 10px 10px;
+  margin: 0 0 10px 50px;
 }
 .services .sercivecadre img {
   height: 100px;
-  width: 150px;
+  width: 100%;
   margin-top: 50px;
 }
 .services .sercivecadre h2 {
@@ -246,5 +277,5 @@ footer p {
 .services .sercivecadre p {
   text-align: left;
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
 }/*# sourceMappingURL=news.css.map */
