@@ -1,14 +1,19 @@
-button{
-    padding: 15px;
-    text-transform: uppercase;
-    color: white;
-    background-color: $color-blue;
-    letter-spacing: 2px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    
-    &:hover{
-        transform: scale(0.5);
-    }
+button {
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: $color-blue;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(0.8);
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
 }

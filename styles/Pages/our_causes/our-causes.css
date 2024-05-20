@@ -161,16 +161,27 @@ button {
   transition: 0.3s;
 }
 button:hover {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
 }
 
+@media screen and (max-width: 568px) {
+  nav {
+    overflow: hidden;
+  }
+}
 .header-container {
   width: 95%;
-  background: black;
-  min-height: 50vh;
-  height: 68vh;
-  max-height: 70vh;
+  background: url(../../../images/focal-point.jpg) center/cover no-repeat;
+  min-height: 450px;
+  height: 480px;
+  max-height: 500px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,20 +192,71 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Arial, Verdana;
+}
+@media screen and (max-width: 320px) {
+  .header-container {
+    min-height: 300px;
+    height: 450px;
+    max-height: 500px;
+  }
 }
 
 .header-content {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  word-spacing: 5px;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
 }
 .header-content p {
-  color: white;
-  font-size: 4.5rem;
+  margin: 50px 0;
+  color: rgb(248, 239, 239);
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .header-content p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .header-content p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-content p {
+    font-size: 1.3rem;
+  }
+}
+
+.header-container {
+  background: url(../../../images/focal-point.jpg) center/cover no-repeat;
 }
 
 .projects-intro {
   text-align: center;
-  margin: 6rem 0;
+  margin: 4rem 0;
 }
 .projects-intro h4 {
   padding-bottom: 0.8rem;
@@ -203,9 +265,19 @@ button:hover {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 320px) {
+  .projects-intro h4 {
+    font-size: 0.7rem;
+  }
+}
 .projects-intro h2 {
   font-size: 2.5rem;
   font-weight: 200;
+}
+@media screen and (max-width: 320px) {
+  .projects-intro h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .project {
@@ -225,7 +297,13 @@ button:hover {
   margin: 2rem 0;
   position: relative;
 }
+@media screen and (max-width: 568px) {
+  .project {
+    margin: 1rem 0;
+  }
+}
 .project .project-main {
+  border: 1px solid rgb(224, 222, 222);
   width: 80%;
   position: relative;
 }
@@ -235,9 +313,19 @@ button:hover {
 }
 .project .project-main img:hover {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.2;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+@media screen and (max-width: 568px) {
+  .project .project-main img {
+    height: 420px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .project .project-main img {
+    height: 320px;
+  }
 }
 .project .project-main .preview {
   position: absolute;
@@ -276,6 +364,22 @@ button:hover {
   overflow: hidden;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .project .project-main .preview p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .project .project-main .preview p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .project .project-main .preview p {
+    line-height: 12px;
+    font-size: 0.5rem;
+  }
+}
 .project .project-main .preview:hover {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -285,17 +389,51 @@ button:hover {
   margin: 2rem 0;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .project .project-footer {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .project .project-footer {
+    margin: 1rem 0;
+  }
+}
 .project .project-footer a {
   color: black;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 568px) {
+  .project .project-footer a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .project .project-footer a {
+    font-size: 0.9rem;
+  }
 }
 .project .project-footer p {
   color: rgb(122, 122, 125);
   margin: 1rem 0;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 768px) {
+  .project .project-footer p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .project .project-footer p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .project .project-footer p {
+    font-size: 0.6rem;
+  }
+}
 .project .project-description {
-  color: red;
   position: absolute;
-  left: -999em;
+  left: -9999em;
 }/*# sourceMappingURL=our-causes.css.map */

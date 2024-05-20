@@ -161,16 +161,27 @@ button {
   transition: 0.3s;
 }
 button:hover {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
 }
 
+@media screen and (max-width: 3680px) {
+  nav {
+    overflow: hidden;
+  }
+}
 .header-container {
   width: 95%;
-  background: black;
-  min-height: 50vh;
-  height: 68vh;
-  max-height: 70vh;
+  background: url(../../../images/focal-point.jpg) center/cover no-repeat;
+  min-height: 450px;
+  height: 480px;
+  max-height: 500px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,20 +192,86 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Arial, Verdana;
+}
+@media screen and (max-width: 320px) {
+  .header-container {
+    min-height: 300px;
+    height: 450px;
+    max-height: 500px;
+  }
 }
 
 .header-content {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  word-spacing: 5px;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
 }
 .header-content p {
-  color: white;
-  font-size: 4.5rem;
+  margin: 50px 0;
+  color: rgb(248, 239, 239);
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .header-content p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .header-content p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-content p {
+    font-size: 1.3rem;
+  }
+}
+
+.header-container {
+  background: url(../../../images/delagation-serialone.jpg) center/cover no-repeat;
+}
+@media screen and (max-width: 728px) {
+  .header-container {
+    overflow: hidden;
+  }
 }
 
 .people-intro {
   text-align: center;
   margin: 6rem 0;
+}
+@media screen and (max-width: 728px) {
+  .people-intro {
+    margin: 4rem 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .people-intro {
+    margin: 2rem 0;
+  }
 }
 .people-intro h4 {
   padding-bottom: 0.8rem;
@@ -207,6 +284,16 @@ button:hover {
   font-size: 2.5rem;
   font-weight: 200;
 }
+@media screen and (max-width: 728px) {
+  .people-intro h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .people-intro h2 {
+    font-size: 1.5rem;
+  }
+}
 
 .persons {
   width: 70%;
@@ -217,9 +304,34 @@ button:hover {
           column-gap: 2rem;
   margin: 0 auto;
 }
+@media screen and (max-width: 728px) {
+  .persons {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 728px) {
+  .persons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 320px) {
+  .persons {
+    grid-template-columns: 1fr;
+  }
+}
 
 .person .person-image {
   height: 450px;
+}
+@media screen and (max-width: 728px) {
+  .person .person-image {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .person .person-image {
+    height: 280px;
+  }
 }
 .person .person-image img {
   height: 100%;
@@ -234,9 +346,19 @@ button:hover {
   font-size: 1.5rem;
   font-weight: 300;
 }
+@media screen and (max-width: 728px) {
+  .person .person-footer h4 {
+    font-size: 1.3rem;
+  }
+}
 .person .person-footer h2 {
   color: rgb(122, 122, 125);
   margin: 1rem 0;
   font-size: 1.2rem;
   font-weight: 100;
+}
+@media screen and (max-width: 728px) {
+  .person .person-footer h2 {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=become.css.map */

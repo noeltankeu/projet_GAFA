@@ -101,8 +101,14 @@ button {
   transition: 0.3s;
 }
 button:hover {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
 }
 
 footer {
@@ -309,18 +315,44 @@ footer .partner .img-foot img:hover {
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .container .text h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .container .text h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container .text h1 {
+    font-size: 1.8rem;
+  }
+}
 .container .text p {
   margin: 50px 0;
-  color: white;
+  color: rgb(248, 239, 239);
   font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .container .text p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .container .text p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container .text p {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .container .text {
     left: 50px;
-  }
-  .container .text h1 {
-    font-size: 2rem;
-    word-spacing: 1px;
   }
   .container .text .but {
     display: block;
