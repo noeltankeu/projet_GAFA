@@ -5,14 +5,16 @@ let btnList = document.querySelectorAll(".read-more");
 
 btnList.forEach((btn)=>{
     btn.addEventListener("click", (e)=>{
-        let descriptionDiv = btn.parentElement.parentElement.nextElementSibling.nextElementSibling;
+        const descriptionDiv = btn.parentElement.parentElement.nextElementSibling.nextElementSibling;
 
-        let title = descriptionDiv.getElementsByClassName("title")[0].innerHTML;
-        let intro = descriptionDiv.getElementsByClassName("intro")[0].innerHTML;
-        let goals = descriptionDiv.getElementsByClassName("goals")[0].innerHTML;
-        let governance = descriptionDiv.getElementsByClassName("governance")[0].innerHTML;
-        let objectives = descriptionDiv.getElementsByClassName("objectives")[0].innerHTML;
+        const image = descriptionDiv.previousElementSibling.previousElementSibling.getElementsByTagName("img")[0].getAttribute("src");
+        const title = descriptionDiv.getElementsByClassName("title")[0].innerHTML;
+        const intro = descriptionDiv.getElementsByClassName("intro")[0].innerHTML;
+        const goals = descriptionDiv.getElementsByClassName("goals")[0].innerHTML;
+        const governance = descriptionDiv.getElementsByClassName("governance")[0].innerHTML;
+        const objectives = descriptionDiv.getElementsByClassName("objectives")[0].innerHTML;
 
+        localStorage.setItem('image', image);
         localStorage.setItem('title', title);
         localStorage.setItem('intro', intro);
         localStorage.setItem('goals', goals);

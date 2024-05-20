@@ -4,76 +4,103 @@
 @import "../../../layouts/footer";
 @import "../../../components/buttons";
 
+.header-container {
+  width: 95%;
 
-.header-container{
-    width: 95%;
-    background: black;
-    min-height: 50vh;
-    height: 68vh;
-    max-height: 70vh;
-    margin: 0 auto;
+  min-height: 450px;
+  height: 480px;
+  max-height: 500px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Verdana;
+
+  @media screen and (max-width: 320px) {
+    min-height: 300px;
+    height: 450px;
+    max-height: 500px;
+  }
 }
 
-.header-content{
-    width: 70%;
-    margin: 0 auto;
-    
+.header-content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 
-    p{
-        color : white;
-        font-size: 4.5rem;
-    }
+  @include headerImageText;
 }
 
+.project-container {
+  width: 80%;
+  margin: 3rem auto;
 
-.project-container{
-    width: 80%;
-    margin: 3rem auto;
+  line-height: 2rem;
+  font-size: 20px;
+  text-align: justify;
 
-    line-height: 2rem;
-    font-size: 20px;
-    text-align: justify;
+  .projects-intro {
+    text-align: center;
 
-    
-    .projects-intro{
-        text-align: center;
-    
-        h4{
-            padding-bottom: 0.8rem;
-            font-weight: 200;
-            color : rgb(122, 122, 125);
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-    
-        h2{
-            font-size: 2.5rem;
-            font-weight: 200;
-        }
+    h4 {
+      padding-bottom: 0.8rem;
+      font-weight: 200;
+      color: rgb(122, 122, 125);
+      text-transform: uppercase;
+      font-size: 0.9rem;
     }
 
-
-    .project-main{
-        padding: 0 50px;
-
-        .introduction, .goals, .governance, .objectives{
-
-            margin-bottom: 40px ;    
-            h2{
-                color: rgb(7, 7, 6);
-                padding: 15px 0;
-            }
-            p{
-                color: rgb(122, 122, 125);
-                padding-left: 30px;
-            }
-        }
-
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 200;
     }
+  }
 
+  .project-main {
+    padding: 0 50px;
 
+    .introduction,
+    .goals,
+    .governance,
+    .objectives {
+      margin-bottom: 40px;
+
+      h2 {
+        color: rgb(7, 7, 6);
+        padding: 15px 0;
+      }
+      p {
+        color: rgb(122, 122, 125);
+        padding-left: 30px;
+      }
+
+      ol {
+        line-height: 40px;
+        li {
+          list-style: circle;
+          margin: 10px 0 10px 50px;
+        }
+        ol {
+          li {
+            list-style: disc;
+          }
+          ol {
+            li {
+              list-style: square;
+              color: $color-blue;
+            }
+          }
+        }
+      }
+
+      img {
+        display: block;
+        margin: 2rem auto;
+      }
+    }
+  }
 }
