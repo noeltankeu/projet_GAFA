@@ -114,6 +114,13 @@ footer h2 {
   letter-spacing: 2px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  footer h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+}
 footer p {
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -148,6 +155,13 @@ footer .partner .img-foot img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
+@media screen and (max-width: 768px) {
+  footer .partner .img-foot img:hover {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+  }
+}
 
 button {
   padding: 15px;
@@ -161,8 +175,8 @@ button {
   transition: 0.3s;
 }
 button:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 @media screen and (max-width: 768px) {
   button {

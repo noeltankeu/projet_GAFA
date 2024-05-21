@@ -1,5 +1,4 @@
 footer{
-
     height: 465px;
     width: 95%;
     background-color: $color-foot ;
@@ -13,6 +12,12 @@ footer{
         font-size: 3rem;
         letter-spacing: 2px;
         margin-bottom: 30px;
+
+        @media screen and (max-width:768px){
+            font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+     }
     }
     p{
         font-size: 1.5rem;
@@ -39,6 +44,12 @@ footer{
                 transition: 0.3s;
                 &:hover{
                     transform: scale(1.5);
+
+                    @media screen and (max-width:768px){
+                        margin-right: 5px;
+                width: 40px;
+                height: 40px;
+                 }
                 }
             }
         }

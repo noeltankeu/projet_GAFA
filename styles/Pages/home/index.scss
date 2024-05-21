@@ -63,20 +63,24 @@
     .slider{
         height: 480px;
         width: 100%;
-        background: url(../../../images/wil.jpg) center/cover;
+        background: url(../../../images/our-blog.jpg) center/cover;
         //border: 3px solid $color-gold;
         animation: glisse 10s linear infinite normal;
 	    animation-fill-mode: both;
     }
     @keyframes glisse{
-        0%{ background: url(../../../images/wil.jpg) center/cover;}
-        20%{ background: url(../../../images/wil.jpg) center/cover;}
-        25%{ background: url(../../../images/african-focal.jpg) center/cover;}
-        40%{ background: url(../../../images/african-focal.jpg) center/cover;}
-        50%{ background: url(../../../images/ceo.jpg) center/cover;}
-        70%{ background: url(../../../images/ceo.jpg) center/cover;}
-        75%{ background: url(../../../images/about-us.jpg) center/cover;}
-        100%{ background: url(../../../images/about-us.jpg) center/cover;} 
+        0%{ background: url(../../../images/our-blog.jpg) center/cover;}
+        10%{ background: url(../../../images/our-blog.jpg) center/cover;}
+        16%{ background: url(../../../images/wil.jpg) center/cover;}
+        26%{ background: url(../../../images/wil.jpg) center/cover;}
+        32%{ background: url(../../../images/african-focal.jpg) center/cover;}
+        42%{ background: url(../../../images/african-focal.jpg) center/cover;}
+        48%{ background: url(../../../images/ceo.jpg) center/cover;}
+        58%{ background: url(../../../images/ceo.jpg) center/cover;}
+        64%{ background: url(../../../images/about-us.jpg) center/cover;}
+        74%{ background: url(../../../images/about-us.jpg) center/cover;} 
+        80%{ background: url(../../../images/nutrition.png) center/cover;} 
+        100%{ background: url(../../../images/nutrition.png) center/cover;} 
     }
 
     .text{
@@ -88,7 +92,6 @@
         position: absolute;
         top: 200px ;
         left: 100px;
-        color: white;
         
         @include headerImageText;
        
@@ -138,7 +141,7 @@
                 margin-bottom: 20px;
             }
             p{
-                text-align: left;
+                text-align: justify;
                 margin-bottom: 50px;
                 line-height: 1.5rem;
             }
@@ -150,6 +153,10 @@
                 width: 100%;   
             }
         }
+
+        #but1{
+            width: 30%;
+          }
     }
 
     .team{
@@ -178,10 +185,13 @@
                    margin-bottom: 20px;
                }
                p{
-                   text-align: left;
+                   text-align: justify;
                    margin-bottom: 50px;
                    line-height: 1.5rem;
                }
+               #but1{
+                width: 30%;
+              }
         }
     }
     .main-buttom{
@@ -214,7 +224,7 @@
                    margin-bottom: 20px;
                    text-align: center;
                    font-size: 0.9rem;
-                   text-align: left;
+                   text-align: justify;
                    padding-right: 15px;
             }
             h6{
@@ -223,6 +233,7 @@
             p{
                 width: 100%;
                 padding-right: 50px;
+                text-align: justify;
             }
         }
     }

@@ -101,8 +101,8 @@ button {
   transition: 0.3s;
 }
 button:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 @media screen and (max-width: 768px) {
   button {
@@ -135,6 +135,13 @@ footer h2 {
   font-size: 3rem;
   letter-spacing: 2px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  footer h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
 }
 footer p {
   font-size: 1.5rem;
@@ -169,6 +176,13 @@ footer .partner .img-foot img {
 footer .partner .img-foot img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+@media screen and (max-width: 768px) {
+  footer .partner .img-foot img:hover {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .container {
@@ -230,7 +244,7 @@ footer .partner .img-foot img:hover {
 .container .slider {
   height: 480px;
   width: 100%;
-  background: url(../../../images/wil.jpg) center/cover;
+  background: url(../../../images/our-blog.jpg) center/cover;
   -webkit-animation: glisse 10s linear infinite normal;
           animation: glisse 10s linear infinite normal;
   -webkit-animation-fill-mode: both;
@@ -238,54 +252,78 @@ footer .partner .img-foot img:hover {
 }
 @-webkit-keyframes glisse {
   0% {
+    background: url(../../../images/our-blog.jpg) center/cover;
+  }
+  10% {
+    background: url(../../../images/our-blog.jpg) center/cover;
+  }
+  16% {
     background: url(../../../images/wil.jpg) center/cover;
   }
-  20% {
+  26% {
     background: url(../../../images/wil.jpg) center/cover;
   }
-  25% {
+  32% {
     background: url(../../../images/african-focal.jpg) center/cover;
   }
-  40% {
+  42% {
     background: url(../../../images/african-focal.jpg) center/cover;
   }
-  50% {
+  48% {
     background: url(../../../images/ceo.jpg) center/cover;
   }
-  70% {
+  58% {
     background: url(../../../images/ceo.jpg) center/cover;
   }
-  75% {
+  64% {
     background: url(../../../images/about-us.jpg) center/cover;
+  }
+  74% {
+    background: url(../../../images/about-us.jpg) center/cover;
+  }
+  80% {
+    background: url(../../../images/nutrition.png) center/cover;
   }
   100% {
-    background: url(../../../images/about-us.jpg) center/cover;
+    background: url(../../../images/nutrition.png) center/cover;
   }
 }
 @keyframes glisse {
   0% {
+    background: url(../../../images/our-blog.jpg) center/cover;
+  }
+  10% {
+    background: url(../../../images/our-blog.jpg) center/cover;
+  }
+  16% {
     background: url(../../../images/wil.jpg) center/cover;
   }
-  20% {
+  26% {
     background: url(../../../images/wil.jpg) center/cover;
   }
-  25% {
+  32% {
     background: url(../../../images/african-focal.jpg) center/cover;
   }
-  40% {
+  42% {
     background: url(../../../images/african-focal.jpg) center/cover;
   }
-  50% {
+  48% {
     background: url(../../../images/ceo.jpg) center/cover;
   }
-  70% {
+  58% {
     background: url(../../../images/ceo.jpg) center/cover;
   }
-  75% {
+  64% {
     background: url(../../../images/about-us.jpg) center/cover;
+  }
+  74% {
+    background: url(../../../images/about-us.jpg) center/cover;
+  }
+  80% {
+    background: url(../../../images/nutrition.png) center/cover;
   }
   100% {
-    background: url(../../../images/about-us.jpg) center/cover;
+    background: url(../../../images/nutrition.png) center/cover;
   }
 }
 .container .text {
@@ -306,7 +344,6 @@ footer .partner .img-foot img:hover {
   position: absolute;
   top: 200px;
   left: 100px;
-  color: white;
 }
 .container .text h1 {
   text-transform: uppercase;
@@ -403,7 +440,7 @@ footer .partner .img-foot img:hover {
   margin-bottom: 20px;
 }
 .container .about .test-about p {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 50px;
   line-height: 1.5rem;
 }
@@ -413,6 +450,9 @@ footer .partner .img-foot img:hover {
 .container .about .image img {
   height: 500px;
   width: 100%;
+}
+.container .about #but1 {
+  width: 30%;
 }
 .container .team {
   display: grid;
@@ -447,9 +487,12 @@ footer .partner .img-foot img:hover {
   margin-bottom: 20px;
 }
 .container .team .test-team p {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 50px;
   line-height: 1.5rem;
+}
+.container .team .test-team #but1 {
+  width: 30%;
 }
 .container .main-buttom {
   margin-top: 50px;
@@ -485,7 +528,7 @@ footer .partner .img-foot img:hover {
   margin-bottom: 20px;
   text-align: center;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: justify;
   padding-right: 15px;
 }
 .container .main-buttom .main-but-contain h6 {
@@ -494,4 +537,5 @@ footer .partner .img-foot img:hover {
 .container .main-buttom .main-but-contain p {
   width: 100%;
   padding-right: 50px;
+  text-align: justify;
 }/*# sourceMappingURL=index.css.map */
