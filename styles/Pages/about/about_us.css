@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -25,11 +26,17 @@ a {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 95%;
-  height: 20vh;
+  height: 15vh;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -43,9 +50,14 @@ nav {
   }
 }
 nav .nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
 }
 nav .nav-list ul li {
@@ -55,14 +67,15 @@ nav .nav-list ul li:first-child {
   color: blue;
 }
 nav .nav-list ul li a:hover {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
   font-weight: bold;
   color: blue;
 }
 nav h2 {
-  font-family: "allura";
   font-weight: bold;
+  font-family: "allura";
 }
 nav i {
   position: absolute;
@@ -77,40 +90,85 @@ nav i {
 }
 
 footer {
-  height: 400px;
+  height: 465px;
   width: 95%;
-  background-color: rgba(245, 245, 220, 0.589);
+  background-color: rgb(245, 245, 245);
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
 }
 footer h2 {
-  font-size: 30px;
-  letter-spacing: 3px;
+  font-size: 3rem;
+  letter-spacing: 2px;
   margin-bottom: 30px;
 }
 footer p {
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin-bottom: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
   line-height: 30px;
   text-align: center;
+}
+footer .partner {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+footer .partner h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+footer .partner .img-foot img {
+  margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .partner .img-foot img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 button {
   padding: 15px;
   text-transform: uppercase;
   color: white;
-  background-color: blue;
+  background-color: rgb(4, 55, 242);
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 button:hover {
-  transform: scale(0.5);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {

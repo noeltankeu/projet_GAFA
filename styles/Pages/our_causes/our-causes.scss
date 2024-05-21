@@ -4,130 +4,171 @@
 @import "../../layouts/footer";
 @import "../../components/buttons";
 
-
-.header-container{
-    width: 95%;
-    background: black;
-    min-height: 50vh;
-    height: 68vh;
-    max-height: 70vh;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 568px) {
+  nav {
+    overflow: hidden;
+  }
 }
 
-.header-content{
-    width: 70%;
-    margin: 0 auto;
-    
+@include headerContainerFormat;
 
-    p{
-        color : white;
-        font-size: 4.5rem;
-    }
+.header-container {
+  background: url(../../../images/focal-point.jpg) center/cover no-repeat;
 }
 
-.projects-intro{
-    text-align: center;
-    margin: 6rem 0;
+.projects-intro {
+  text-align: center;
+  margin: 4rem 0;
 
-    h4{
-        padding-bottom: 0.8rem;
-        font-weight: 200;
-        color : rgb(122, 122, 125);
-        text-transform: uppercase;
-        font-size: 0.9rem;
-    }
+  h4 {
+    padding-bottom: 0.8rem;
+    font-weight: 200;
+    color: rgb(122, 122, 125);
+    text-transform: uppercase;
+    font-size: 0.9rem;
 
-    h2{
-        font-size: 2.5rem;
-        font-weight: 200;
+    @media screen and (max-width: 320px) {
+      font-size: 0.7rem;
     }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    @media screen and (max-width: 320px) {
+      font-size: 1.8rem;
+    }
+  }
 }
 
-.project{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  position: relative;
+
+  @media screen and (max-width: 568px) {
+    margin: 1rem 0;
+  }
+
+  .project-main {
+    border: 1px solid rgb(224, 222, 222);
+    width: 80%;
     position: relative;
 
-    .project-main{
-        width: 80%;
-        position: relative;
-        
-        img{
-            height: 520px;
-            width: 100%;
+    img {
+      height: 520px;
+      width: 100%;
 
-            &:hover{
-                cursor: pointer;
-                opacity: 0.7;
-                transition: 0.2s;
-            }
-        }
+      &:hover {
+        cursor: pointer;
+        opacity: 0.2;
+        transition: 0.2s;
+      }
 
-        .preview{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            height: 100%;
-            width: 100%;
-    
-            opacity: 0;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color : white;
-            background: rgba(1,1,1,.50);
-
-            line-height: 30px;
-            font-size: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-
-            p{
-                width: 70%;
-                text-align: justify;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 4;
-                overflow: hidden;
-
-                margin-bottom: 20px;
-            }
-
-            &:hover{
-                transition: 0.4s ease;
-                opacity: 1;
-            }
-        }
-    }
-    
-    .project-footer{
-        margin: 2rem 0;
-        text-align: center;
-
-        a{
-            color : black;
-            font-size: 1.5rem;  
-        }
-
-        p{
-            color: rgb(122, 122, 125);
-            margin: 1rem 0;
-            font-size: 1.2rem;
-        }
+      @media screen and (max-width: 568px) {
+        height: 420px;
+      }
+      @media screen and (max-width: 320px) {
+        height: 320px;
+      }
     }
 
-    .project-description{
-        color: red;
-        position: absolute;
-        left : -999em;
+    .preview {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(1, 1, 1, 0.5);
+
+      line-height: 30px;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        width: 70%;
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+        }
+
+        @media screen and (max-width: 568px) {
+          font-size: 0.7rem;
+        }
+        @media screen and (max-width: 320px) {
+          line-height: 12px;
+          font-size: 0.5rem;
+        }
+      }
+
+      &:hover {
+        transition: 0.4s ease;
+        opacity: 1;
+      }
     }
+  }
+
+  .project-footer {
+    margin: 2rem 0;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 568px) {
+      margin: 1rem 0;
+    }
+
+    a {
+      color: black;
+      font-size: 1.5rem;
+
+      @media screen and (max-width: 568px) {
+        font-size: 1.2rem;
+      }
+
+      @media screen and (max-width: 320px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    p {
+      color: rgb(122, 122, 125);
+      margin: 1rem 0;
+      font-size: 1.2rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 568px) {
+        font-size: 0.7rem;
+      }
+      @media screen and (max-width: 320px) {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .project-description {
+    position: absolute;
+    left: -9999em;
+  }
 }

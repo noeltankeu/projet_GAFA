@@ -1,13 +1,13 @@
 $color-body : white;
-$color-foot : rgba(245, 245, 220, 0.589);
-$color-gold : gold;
-$color-blue : blue;
-$color-ultramarine : rgba(0, 0, 255, 0.425);
+$color-foot : rgb(245, 245, 245);
+$color-gold : rgb(255,223,0);
+$color-blue : rgb(4,55,242) ;
+
 
 
 @font-face {
-    font-family: "allura";
-    src: url(../fonts/Allura-Regular.ttf);
+  font-family: "allura";
+  src: url(../fonts/Allura-Regular.ttf);
 }
 
 *{
@@ -16,25 +16,92 @@ $color-ultramarine : rgba(0, 0, 255, 0.425);
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-
 }
 
-body{
-    min-height: 100vh;
-    font-family: Verdana, Arial;
-
+body {
+  min-height: 100vh;
+  font-family: Verdana, Arial;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-a{
-    text-decoration: none; 
-    color: rgba(0, 0, 0, 0.5);
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-@mixin centerchild{
+@mixin centerchild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin headerImageText {
+  h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    word-spacing: 5px;
+    text-align: center;
+    color: white;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 568px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 1.8rem;
+    }
+  }
+  p {
+    margin: 50px 0;
+    color: rgb(248, 239, 239);
+    font-size: 2rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 568px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@mixin headerContainerFormat {
+  .header-container {
+    width: 95%;
+    background: url(../../../images/focal-point.jpg) center/cover no-repeat;
+
+    min-height: 450px;
+    height: 480px;
+    max-height: 500px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: Arial, Verdana;
+
+    @media screen and (max-width: 320px) {
+      min-height: 300px;
+      height: 450px;
+      max-height: 500px;
+    }
+  }
+
+  .header-content {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include headerImageText;
+  }
 }
