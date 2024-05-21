@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -26,15 +25,9 @@ a {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 95%;
   height: 15vh;
   margin: 0 auto;
@@ -50,14 +43,9 @@ nav {
   }
 }
 nav .nav-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   text-transform: uppercase;
 }
 nav .nav-list ul li {
@@ -67,7 +55,6 @@ nav .nav-list ul li:first-child {
   color: blue;
 }
 nav .nav-list ul li a:hover {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
   font-weight: bold;
@@ -97,10 +84,12 @@ button {
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 button:hover {
+
+  transform: scale(0.5);
+
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
@@ -109,6 +98,7 @@ button:hover {
     font-size: 0.5rem;
     padding: 10px;
   }
+
 }
 
 footer {
@@ -116,9 +106,12 @@ footer {
   width: 95%;
   background-color: rgb(245, 245, 245);
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -230,6 +223,46 @@ footer .partner .img-foot img:hover {
 .container .slider {
   height: 480px;
   width: 100%;
+
+  overflow: hidden;
+  position: relative;
+  z-index: -1000;
+}
+.container .slider .sliders {
+  width: 400%;
+  animation: glisse 10s infinite;
+}
+.container .slider .sliders .slide {
+  float: left;
+}
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1280px);
+  }
+  45% {
+    transform: translateX(-1280px);
+  }
+  50% {
+    transform: translateX(-2560px);
+  }
+  65% {
+    transform: translateX(-2560px);
+  }
+  75% {
+    transform: translateX(-3840px);
+  }
+  95% {
+    transform: translateX(-3840px);
+  }
+  100% {
+    transform: translateX(0);
+
   background: url(../../../images/wil.jpg) center/cover;
   -webkit-animation: glisse 10s linear infinite normal;
           animation: glisse 10s linear infinite normal;
@@ -289,19 +322,10 @@ footer .partner .img-foot img:hover {
   }
 }
 .container .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: absolute;
   top: 200px;
@@ -381,16 +405,9 @@ footer .partner .img-foot img:hover {
   grid-template-columns: 40% 60%;
 }
 .container .about .test-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .container .about .test-about h5 {
   text-transform: uppercase;
@@ -425,16 +442,9 @@ footer .partner .img-foot img:hover {
 }
 .container .team .test-team {
   margin: 0 0 0 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .container .team .test-team h5 {
   text-transform: uppercase;
@@ -470,12 +480,8 @@ footer .partner .img-foot img:hover {
   letter-spacing: 2px;
 }
 .container .main-buttom .main-but-contain {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 5rem auto;
   width: 80%;
 }

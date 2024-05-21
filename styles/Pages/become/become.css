@@ -5,8 +5,12 @@
 * {
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
+
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+
   list-style: none;
   text-decoration: none;
 }
@@ -26,15 +30,9 @@ a {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 95%;
   height: 15vh;
   margin: 0 auto;
@@ -50,14 +48,13 @@ nav {
   }
 }
 nav .nav-list ul {
+
+
   display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   text-transform: uppercase;
 }
 nav .nav-list ul li {
@@ -67,15 +64,22 @@ nav .nav-list ul li:first-child {
   color: blue;
 }
 nav .nav-list ul li a:hover {
+
   -webkit-transition: 0.3s;
+
   transition: 0.3s;
   cursor: pointer;
   font-weight: bold;
   color: blue;
 }
 nav h2 {
+
+  font-family: "allura";
+  font-weight: bold;
+
   font-weight: bold;
   font-family: "allura";
+
 }
 nav i {
   position: absolute;
@@ -94,9 +98,12 @@ footer {
   width: 95%;
   background-color: rgb(245, 245, 245);
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -108,6 +115,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2rem;
+
 }
 footer h2 {
   font-size: 3rem;
@@ -153,6 +161,16 @@ button {
   padding: 15px;
   text-transform: uppercase;
   color: white;
+
+  background-color: blue;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(0.5);
+
   background-color: rgb(4, 55, 242);
   letter-spacing: 2px;
   border: none;
@@ -169,6 +187,7 @@ button:hover {
     font-size: 0.5rem;
     padding: 10px;
   }
+
 }
 
 @media screen and (max-width: 3680px) {
@@ -183,9 +202,11 @@ button:hover {
   height: 480px;
   max-height: 500px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+
+  justify-content: center;
+  align-items: center;
+
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -299,9 +320,8 @@ button:hover {
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
-          column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   margin: 0 auto;
 }
 @media screen and (max-width: 728px) {
