@@ -10,20 +10,51 @@ body {
   img {
     margin-left: 2rem;
     width: 95%;
+    height: 480px;
+    @media screen and (max-width: 320px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 568px) {
+      margin: 0;
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 96%;
+    }
   }
   .form-container {
     display: grid;
     margin-top: 10rem;
     grid-template-columns: 60% 30%;
     grid-template-areas: "f1 f2";
+    @media screen and (max-width: 320px) {
+      margin: 0;
+      margin-top: 5rem;
+      grid-template-areas:
+        "f1"
+        "f2";
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 5rem;
+      grid-template-areas:
+        "f1"
+        "f2";
+    }
     .form-left {
       grid-area: f1;
       margin-left: 1.9rem;
       border: 1px solid grey;
       padding: 40px 25px 30px 40px;
-      //padding-top: 30px;
-      //padding-left: 40px;
-      //padding-bottom: 30px;
+      @media screen and (max-width: 320px) {
+        margin-left: 10rem;
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 10rem;
+        width: 100%;
+      }
       span {
         text-align: left;
         font-size: 1.9rem;
@@ -50,6 +81,12 @@ body {
         padding-top: 10px;
         padding-left: 10px;
         font-size: 0.9rem;
+        @media screen and (max-width: 768px) {
+          width: 94%;
+        }
+        @media screen and (max-width: 568px) {
+          width: 30%;
+        }
       }
       button {
         width: 96%;
@@ -64,6 +101,12 @@ body {
       grid-area: f2;
       margin-left: 10rem;
       width: 80%;
+      @media screen and (max-width: 768px) {
+        margin-top: 6rem;
+        text-align: center;
+        margin-left: 10.7rem;
+        width: 94%;
+      }
     }
   }
 
@@ -71,8 +114,15 @@ body {
     width: 95%;
     margin-top: 4rem;
     margin-left: 2rem;
+    @media screen and (max-width: 768px) {
+      width: 96%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
   .directors {
+    width: 95%;
+    margin: 0 auto;
     background-color: whitesmoke;
     p {
       margin-top: 2rem;
@@ -86,12 +136,20 @@ body {
       margin-left: 12rem;
       font-size: 1.5rem;
       width: 70%;
+      @media screen and (max-width: 768px) {
+        margin-left: 7rem;
+      }
     }
     img {
       margin-left: 32.5rem;
       margin-top: 3rem;
       width: 20%;
       height: 146px;
+      @media screen and (max-width: 768px) {
+        width: 40%;
+        height: 220px;
+        margin-left: 13.9rem;
+      }
     }
     #nom {
       font-size: 1.7rem;
