@@ -249,8 +249,6 @@ footer .partner .img-foot img:hover {
           animation: glisse 10s linear infinite normal;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 @-webkit-keyframes glisse {
   0% {

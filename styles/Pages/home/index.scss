@@ -67,7 +67,6 @@
         //border: 3px solid $color-gold;
         animation: glisse 10s linear infinite normal;
 	    animation-fill-mode: both;
-        transition: 0.3s;
     }
     @keyframes glisse{
         0%{ background: url(../../../images/our-blog.jpg) center/cover;}
