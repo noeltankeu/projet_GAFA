@@ -34,9 +34,8 @@ footer {
   }
   .partner {
     margin-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 80%;
     width: 100%;
 
     @media screen and (max-width: 768px) {
@@ -50,12 +49,15 @@ footer {
     }
 
     h5 {
+      text-align: center;
       font-size: 1.2rem;
       text-transform: uppercase;
       @media screen and (max-width: 768px) {
       }
     }
     .img-foot {
+      display: flex;
+      justify-content: space-between;
       @media screen and (max-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

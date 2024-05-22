@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -35,25 +36,26 @@ nav h2 {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
   height: 15vh;
   margin: 0 auto;
 }
 nav .nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   margin: 30px;
 }
@@ -72,13 +74,8 @@ nav .nav-list ul li {
     padding: 10px;
   }
 }
-
-nav .nav-list ul li a:hover {
-  transition: 0.3s;
-
 nav .nav-list ul li:hover {
   border-bottom: 3px solid blue;
-
   cursor: pointer;
 }
 nav .nav-list ul li a {
@@ -138,10 +135,12 @@ button {
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 button:hover {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 @media screen and (max-width: 768px) {
   button {
@@ -155,13 +154,9 @@ footer {
   width: 95%;
   background-color: rgb(245, 245, 245);
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2rem;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -173,7 +168,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 5rem;
-
 }
 footer h2 {
   font-size: 3rem;
@@ -202,9 +196,8 @@ footer p {
 }
 footer .partner {
   margin-top: 4rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 30% 80%;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -220,8 +213,17 @@ footer .partner {
   }
 }
 footer .partner h5 {
+  text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+footer .partner .img-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   footer .partner .img-foot {
@@ -240,6 +242,7 @@ footer .partner .img-foot img {
   margin-right: 15px;
   width: 80px;
   height: 80px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 @media screen and (max-width: 568px) {
@@ -249,12 +252,8 @@ footer .partner .img-foot img {
   }
 }
 footer .partner .img-foot img:hover {
-
-  transform: scale(1.5);
-
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-
 }
 @media screen and (max-width: 768px) {
   footer .partner .img-foot img:hover {
@@ -370,8 +369,48 @@ footer .copyright .copyright-text {
   height: 480px;
   width: 100%;
   background: url(../../../images/our-blog.jpg) center/cover;
-  animation: glisse 10s linear infinite normal;
-  animation-fill-mode: both;
+  -webkit-animation: glisse 10s linear infinite normal;
+          animation: glisse 10s linear infinite normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes glisse {
+  0% {
+    background: url(../../../images/our-blog.jpg) center/cover;
+  }
+  10% {
+    background: url(../../../images/our-blog.jpg) center/cover;
+  }
+  16% {
+    background: url(../../../images/wil.jpg) center/cover;
+  }
+  26% {
+    background: url(../../../images/wil.jpg) center/cover;
+  }
+  32% {
+    background: url(../../../images/african-focal.jpg) center/cover;
+  }
+  42% {
+    background: url(../../../images/african-focal.jpg) center/cover;
+  }
+  48% {
+    background: url(../../../images/ceo.jpg) center/cover;
+  }
+  58% {
+    background: url(../../../images/ceo.jpg) center/cover;
+  }
+  64% {
+    background: url(../../../images/about-us.jpg) center/cover;
+  }
+  74% {
+    background: url(../../../images/about-us.jpg) center/cover;
+  }
+  80% {
+    background: url(../../../images/nutrition.png) center/cover;
+  }
+  100% {
+    background: url(../../../images/nutrition.png) center/cover;
+  }
 }
 @keyframes glisse {
   0% {
@@ -412,10 +451,19 @@ footer .copyright .copyright-text {
   }
 }
 .container .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   position: absolute;
   top: 200px;
@@ -494,9 +542,16 @@ footer .copyright .copyright-text {
   grid-template-columns: 40% 60%;
 }
 .container .about .test-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .container .about .test-about h5 {
   text-transform: uppercase;
@@ -522,49 +577,261 @@ footer .copyright .copyright-text {
   height: 350px;
   width: 90%;
 }
-.container .about #but1 {
+.container .about .about {
+  padding-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.container .about .about .test-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .about .about .test-about h5 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+.container .about .about .test-about h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.container .about .about .test-about p {
+  text-align: justify;
+  margin-bottom: 50px;
+  line-height: 1.5rem;
+}
+.container .about .about .image {
+  margin-left: 50px;
+}
+.container .about .about .image img {
+  height: 500px;
+  width: 100%;
+}
+.container .about .about #but1 {
   width: 30%;
 }
-.container .team {
+.container .about .team {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin-top: 5rem;
+}
+.container .about .team img {
+  height: 500px;
+  width: 100%;
+}
+.container .about .team .test-team {
+  margin: 0 0 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .about .team .test-team .team {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 3rem;
 }
-.container .team img {
+.container .about .team .test-team .team img {
   height: 350px;
   width: 90%;
 }
-.container .team .test-team {
-
-  margin: 0 0 0 100px;
-
+.container .about .team .test-team .team .test-team {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.container .team .test-team h5 {
+.container .about .team .test-team .team .test-team h5 {
   text-transform: uppercase;
   color: black;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.container .team .test-team h4 {
+.container .about .team .test-team .team .test-team h4 {
   text-transform: capitalize;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.container .team .test-team p {
+.container .about .team .test-team .team .test-team p {
   text-align: justify;
   margin-bottom: 50px;
   line-height: 2rem;
   width: 90%;
 }
-.container .team .test-team #but1 {
+.container .about .team .test-team .team .test-team #but1 {
+  width: 30%;
+}
+.container .about .team .test-team .main-buttom {
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.container .about .team .test-team .main-buttom .company h5 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 50px 15px 15px 15px;
+}
+.container .about .team .test-team .main-buttom .company h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.container .about .team .test-team .main-buttom .main-but-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem auto;
+  width: 80%;
+}
+.container .about .team .test-team .main-buttom .main-but-contain h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  text-align: justify;
+  padding-right: 15px;
+}
+.container .about .team .test-team .main-buttom .main-but-contain h6 {
+  margin-bottom: 10px;
+}
+.container .about .team .test-team .main-buttom .main-but-contain p {
+  width: 100%;
+  padding-right: 50px;
+  text-align: justify;
+}
+.container .about .team .test-team .services {
+  width: 95%;
+  margin: 0 auto;
+}
+.container .about .team .test-team .services .impro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .about .team .test-team .services h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  margin-top: 50px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+}
+.container .about .team .test-team .services h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  width: 80%;
+  font-weight: 100;
+}
+.container .about .team .test-team .services .sercivecadre {
+  width: 70%;
+  margin: 0 auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "z1 z2 z3" "z4 z5 z6";
+}
+.container .about .team .test-team .services .sercivecadre .support {
+  grid-area: z1;
+  margin: 10px 50px 0 0;
+}
+.container .about .team .test-team .services .sercivecadre .stategy {
+  grid-area: z2;
+  margin: 10px 10px 0 10px;
+}
+.container .about .team .test-team .services .sercivecadre .Management {
+  grid-area: z3;
+  margin: 10px 0 0 50px;
+}
+.container .about .team .test-team .services .sercivecadre .Training {
+  grid-area: z4;
+  margin: 0 50px 10px 0;
+}
+.container .about .team .test-team .services .sercivecadre .Consulting {
+  grid-area: z5;
+  margin: 0 10px 10px 10px;
+}
+.container .about .team .test-team .services .sercivecadre .Events {
+  grid-area: z6;
+  margin: 0 0 10px 50px;
+}
+.container .about .team .test-team .services .sercivecadre img {
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+.container .about .team .test-team .services .sercivecadre h2 {
+  margin-top: 15px;
+}
+.container .about .team .test-team .services .sercivecadre p {
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
+}
+.container .about .team h5 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+.container .about .team h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.container .about .team p {
+  text-align: justify;
+  margin-bottom: 50px;
+  line-height: 1.5rem;
+}
+.container .about .team #but1 {
   width: 30%;
 }
 .container .main-buttom {
@@ -580,14 +847,18 @@ footer .copyright .copyright-text {
 .container .main-buttom .company h3 {
   text-transform: capitalize;
   font-weight: bold;
-  margin: 30px auto 0 auto;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 2rem;
   letter-spacing: 2px;
 }
 .container .main-buttom .main-but-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 5rem auto;
   width: 80%;
 }
@@ -607,90 +878,4 @@ footer .copyright .copyright-text {
   width: 100%;
   padding-right: 50px;
   text-align: justify;
-}
-.container .services {
-  width: 95%;
-  margin: 0 auto;
-}
-.container .services .impro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.container .services h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1rem;
-  margin-top: 50px;
-  text-transform: uppercase;
-  word-spacing: 3px;
-}
-.container .services h3 {
-  text-align: center;
-  font-size: 1.3rem;
-  margin-top: 15px;
-  width: 80%;
-  font-weight: 100;
-}
-.container .services .sercivecadre {
-  width: 70%;
-  margin: 0 auto 30px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "z1 z2 z3" "z4 z5 z6";
-}
-.container .services .sercivecadre .support {
-  grid-area: z1;
-  margin: 10px 50px 0 0;
-}
-.container .services .sercivecadre .stategy {
-  grid-area: z2;
-  margin: 10px 10px 0 10px;
-}
-.container .services .sercivecadre .Management {
-  grid-area: z3;
-  margin: 10px 0 0 50px;
-}
-.container .services .sercivecadre .Training {
-  grid-area: z4;
-  margin: 0 50px 10px 0;
-}
-.container .services .sercivecadre .Consulting {
-  grid-area: z5;
-  margin: 0 10px 10px 10px;
-}
-.container .services .sercivecadre .Events {
-  grid-area: z6;
-  margin: 0 0 10px 50px;
-}
-.container .services .sercivecadre img {
-  height: 100px;
-  width: 100%;
-  margin-top: 50px;
-}
-.container .services .sercivecadre h2 {
-  margin-top: 15px;
-}
-.container .services .sercivecadre p {
-  text-align: left;
-  margin-top: 20px;
-  width: 100%;
 }/*# sourceMappingURL=index.css.map */
