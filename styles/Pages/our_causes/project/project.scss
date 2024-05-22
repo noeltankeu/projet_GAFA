@@ -4,9 +4,31 @@
 @import "../../../layouts/footer";
 @import "../../../components/buttons";
 
+
 @media screen and (max-width: 728px) {
   nav {
     overflow: hidden;
+
+.header-container {
+  width: 95%;
+  min-height: 450px;
+  height: 480px;
+  max-height: 500px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Verdana;
+
+  @media screen and (max-width: 320px) {
+    min-height: 300px;
+    height: 450px;
+    max-height: 500px;
+
   }
 }
 

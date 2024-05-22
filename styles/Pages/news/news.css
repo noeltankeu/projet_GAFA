@@ -39,13 +39,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 95%;
   height: 15vh;
   margin: 0 auto;
 }
@@ -59,33 +57,58 @@ nav .nav-list ul {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-}
-nav .nav-list ul li {
-  margin-left: 20px;
-}
-nav .nav-list ul li:first-child {
-  color: blue;
-}
-nav .nav-list ul li a:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-  font-weight: bold;
-  color: blue;
+  margin: 30px;
 }
 @media screen and (max-width: 768px) {
-  nav .nav-list li {
-    margin-left: 5px;
+  nav .nav-list ul {
+    margin: 10px;
+  }
+}
+nav .nav-list ul li {
+  padding: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-list ul li {
+    padding: 10px;
+  }
+}
+nav .nav-list ul li:hover {
+  border-bottom: 3px solid blue;
+  cursor: pointer;
+}
+nav .nav-list ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-list ul li a {
     font-size: 0.8rem;
-    text-align: center;
   }
-  nav .nav-list h2 {
-    font-size: 1rem;
+}
+@media screen and (max-width: 668px) {
+  nav .nav-list ul li a {
+    font-size: 0.7rem;
   }
+}
+@media screen and (max-width: 320px) {
+  nav .nav-list ul li a {
+    font-size: 0.6rem;
+  }
+}
+nav .nav-list ul li a:hover {
+  color: blue;
 }
 nav h2 {
   font-weight: bold;
   font-family: "allura";
+}
+@media screen and (max-width: 768px) {
+  nav h2 {
+    font-size: 1rem;
+  }
 }
 nav i {
   position: absolute;
@@ -97,6 +120,11 @@ nav i {
   nav #cont {
     display: none;
   }
+}
+nav #donate {
+  position: fixed;
+  top: -100px;
+  right: 100px;
 }
 
 button {

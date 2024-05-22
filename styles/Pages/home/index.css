@@ -39,13 +39,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 95%;
   height: 15vh;
   margin: 0 auto;
 }
@@ -59,33 +57,58 @@ nav .nav-list ul {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-}
-nav .nav-list ul li {
-  margin-left: 20px;
-}
-nav .nav-list ul li:first-child {
-  color: blue;
-}
-nav .nav-list ul li a:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-  font-weight: bold;
-  color: blue;
+  margin: 30px;
 }
 @media screen and (max-width: 768px) {
-  nav .nav-list li {
-    margin-left: 5px;
+  nav .nav-list ul {
+    margin: 10px;
+  }
+}
+nav .nav-list ul li {
+  padding: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-list ul li {
+    padding: 10px;
+  }
+}
+nav .nav-list ul li:hover {
+  border-bottom: 3px solid blue;
+  cursor: pointer;
+}
+nav .nav-list ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-list ul li a {
     font-size: 0.8rem;
-    text-align: center;
   }
-  nav .nav-list h2 {
-    font-size: 1rem;
+}
+@media screen and (max-width: 668px) {
+  nav .nav-list ul li a {
+    font-size: 0.7rem;
   }
+}
+@media screen and (max-width: 320px) {
+  nav .nav-list ul li a {
+    font-size: 0.6rem;
+  }
+}
+nav .nav-list ul li a:hover {
+  color: blue;
 }
 nav h2 {
   font-weight: bold;
   font-family: "allura";
+}
+@media screen and (max-width: 768px) {
+  nav h2 {
+    font-size: 1rem;
+  }
 }
 nav i {
   position: absolute;
@@ -97,6 +120,11 @@ nav i {
   nav #cont {
     display: none;
   }
+}
+nav #donate {
+  position: fixed;
+  top: -100px;
+  right: 100px;
 }
 
 button {
@@ -524,8 +552,10 @@ footer .copyright .copyright-text {
 }
 .container .about .test-about h5 {
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 15px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .container .about .test-about h4 {
   text-transform: capitalize;
@@ -533,31 +563,31 @@ footer .copyright .copyright-text {
   margin-bottom: 20px;
 }
 .container .about .test-about p {
-  text-align: justify;
+  text-align: left;
   margin-bottom: 50px;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 .container .about .image {
-  margin-left: 50px;
+  margin-left: 150px;
 }
 .container .about .image img {
-  height: 500px;
-  width: 100%;
+  height: 350px;
+  width: 90%;
 }
 .container .about #but1 {
   width: 30%;
 }
 .container .team {
   display: grid;
-  grid-template-columns: 55% 45%;
-  margin-top: 5rem;
+  grid-template-columns: 50% 50%;
+  margin-top: 3rem;
 }
 .container .team img {
-  height: 500px;
-  width: 100%;
+  height: 350px;
+  width: 90%;
 }
 .container .team .test-team {
-  margin: 0 0 0 100px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,8 +601,10 @@ footer .copyright .copyright-text {
 }
 .container .team .test-team h5 {
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 15px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .container .team .test-team h4 {
   text-transform: capitalize;
@@ -582,7 +614,8 @@ footer .copyright .copyright-text {
 .container .team .test-team p {
   text-align: justify;
   margin-bottom: 50px;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  width: 90%;
 }
 .container .team .test-team #but1 {
   width: 30%;
@@ -600,7 +633,7 @@ footer .copyright .copyright-text {
 .container .main-buttom .company h3 {
   text-transform: capitalize;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 30px auto 0 auto;
   text-align: center;
   font-size: 2rem;
   letter-spacing: 2px;
@@ -631,4 +664,90 @@ footer .copyright .copyright-text {
   width: 100%;
   padding-right: 50px;
   text-align: justify;
+}
+.container .services {
+  width: 95%;
+  margin: 0 auto;
+}
+.container .services .impro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .services h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  margin-top: 50px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+}
+.container .services h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  width: 80%;
+  font-weight: 100;
+}
+.container .services .sercivecadre {
+  width: 70%;
+  margin: 0 auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "z1 z2 z3" "z4 z5 z6";
+}
+.container .services .sercivecadre .support {
+  grid-area: z1;
+  margin: 10px 50px 0 0;
+}
+.container .services .sercivecadre .stategy {
+  grid-area: z2;
+  margin: 10px 10px 0 10px;
+}
+.container .services .sercivecadre .Management {
+  grid-area: z3;
+  margin: 10px 0 0 50px;
+}
+.container .services .sercivecadre .Training {
+  grid-area: z4;
+  margin: 0 50px 10px 0;
+}
+.container .services .sercivecadre .Consulting {
+  grid-area: z5;
+  margin: 0 10px 10px 10px;
+}
+.container .services .sercivecadre .Events {
+  grid-area: z6;
+  margin: 0 0 10px 50px;
+}
+.container .services .sercivecadre img {
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+.container .services .sercivecadre h2 {
+  margin-top: 15px;
+}
+.container .services .sercivecadre p {
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
