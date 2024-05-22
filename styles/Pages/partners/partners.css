@@ -1,6 +1,6 @@
 @font-face {
   font-family: "allura";
-  src: url(../fonts/Allura/Allura-Regular.ttf);
+  src: url("../fonts/Allura/Allura-Regular.ttf");
 }
 * {
   margin: 0;
@@ -23,6 +23,16 @@ ul {
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    overflow: hidden;
+  }
+}
+nav h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
 nav {
@@ -107,7 +117,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 footer h2 {
   font-size: 3rem;
@@ -128,6 +138,12 @@ footer p {
   line-height: 30px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 footer .partner {
   margin-top: 4rem;
   display: -webkit-box;
@@ -140,9 +156,34 @@ footer .partner {
           align-items: center;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  footer .partner {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer .partner {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
 footer .partner h5 {
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  footer .partner .img-foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer .partner .img-foot {
+    display: grid;
+    gap: 10px;
+  }
 }
 footer .partner .img-foot img {
   margin-right: 15px;
@@ -151,15 +192,67 @@ footer .partner .img-foot img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+@media screen and (max-width: 568px) {
+  footer .partner .img-foot img {
+    width: 50px;
+    height: 50px;
+  }
+}
 footer .partner .img-foot img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media screen and (max-width: 768px) {
   footer .partner .img-foot img:hover {
-    margin-right: 5px;
     width: 40px;
     height: 40px;
+  }
+}
+footer .copyright {
+  background: rgb(245, 245, 245);
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+footer .copyright .footer-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.5rem;
+  width: 20%;
+  margin: 10px auto;
+  padding: 5px;
+  background: rgb(204, 202, 201);
+  border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  footer .copyright .footer-logos {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer .copyright .footer-logos {
+    font-size: 1rem;
+    width: 40%;
+  }
+}
+footer .copyright .footer-logos i:hover {
+  color: rgb(4, 55, 242);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+footer .copyright .copyright-text {
+  background: rgb(204, 202, 201);
+  padding: 5px;
+}
+@media screen and (max-width: 568px) {
+  footer .copyright .copyright-text {
+    font-size: 0.8rem;
   }
 }
 
@@ -188,8 +281,9 @@ button:hover {
 .header-container {
   width: 95%;
   background: url(../../../images/focal-point.jpg) center/cover no-repeat;
-  min-height: 450px;
-  height: 480px;
+  background-position: 35% 80%;
+  min-height: 250px;
+  height: 400px;
   max-height: 500px;
   margin: 0 auto;
   display: -webkit-box;
@@ -207,6 +301,13 @@ button:hover {
   .header-container {
     min-height: 300px;
     height: 450px;
+    max-height: 500px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .header-container {
+    min-height: 300px;
+    height: 350px;
     max-height: 500px;
   }
 }
