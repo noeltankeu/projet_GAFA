@@ -196,14 +196,8 @@ footer p {
 }
 footer .partner {
   margin-top: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: 30% 80%;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -219,8 +213,17 @@ footer .partner {
   }
 }
 footer .partner h5 {
+  text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+footer .partner .img-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   footer .partner .img-foot {
@@ -523,8 +526,8 @@ footer .copyright .copyright-text {
   text-align: center;
 }
 .container .para h3 {
-  font-size: 0.7rem;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  color: black;
 }
 .container .para p {
   margin-top: 20px;
@@ -552,8 +555,10 @@ footer .copyright .copyright-text {
 }
 .container .about .test-about h5 {
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 15px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .container .about .test-about h4 {
   text-transform: capitalize;
@@ -563,14 +568,15 @@ footer .copyright .copyright-text {
 .container .about .test-about p {
   text-align: justify;
   margin-bottom: 50px;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  width: 90%;
 }
 .container .about .image {
   margin-left: 50px;
 }
 .container .about .image img {
-  height: 500px;
-  width: 100%;
+  height: 350px;
+  width: 90%;
 }
 .container .about #but1 {
   width: 30%;
@@ -622,19 +628,17 @@ footer .copyright .copyright-text {
   margin-top: 50px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-.container .main-buttom .company h5 {
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  margin: 50px 15px 15px 15px;
-}
 .container .main-buttom .company h3 {
-  text-transform: capitalize;
-  font-weight: bold;
-  margin: 30px auto 0 auto;
-  text-align: center;
+  text-transform: uppercase;
+  color: black;
   font-size: 2rem;
-  letter-spacing: 2px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 50px 15px 0px 15px;
+}
+.container .main-buttom .company #but1 {
+  width: 30%;
 }
 .container .services {
   width: 95%;

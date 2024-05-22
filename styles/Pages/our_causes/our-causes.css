@@ -174,14 +174,8 @@ footer p {
 }
 footer .partner {
   margin-top: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: 30% 80%;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -197,8 +191,17 @@ footer .partner {
   }
 }
 footer .partner h5 {
+  text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+footer .partner .img-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   footer .partner .img-foot {
