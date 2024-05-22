@@ -175,7 +175,7 @@ footer p {
 footer .partner {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: 30% 80%;
+  grid-template-columns: 30% 70%;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -187,7 +187,7 @@ footer .partner {
 @media screen and (max-width: 568px) {
   footer .partner {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
   }
 }
 footer .partner h5 {
@@ -199,9 +199,8 @@ footer .partner .img-foot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
   footer .partner .img-foot {
