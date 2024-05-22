@@ -18,28 +18,117 @@
     overflow: hidden;
   }
 }
-body {
-  //background-color: whitesmoke;
-}
 .container {
   img {
-    margin-left: 2rem;
     width: 95%;
-    height: 480px;
-    @media screen and (max-width: 320px) {
-      margin: 0;
-      width: 75%;
+    height: 96%;
+  }
+
+  .blog {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "i1 t1";
+    margin-bottom: 20px;
+    .blog-text {
+      grid-area: t1;
+      margin-top: 5.8rem;
+      width: 90%;
     }
-    @media screen and (max-width: 568px) {
-      width: 58%;
-      margin-left: 1rem;
+    .image {
+      grid-area: i1;
+      margin-left: 0;
     }
-    @media screen and (max-width: 768px) {
-      width: 92%;
+  }
+  .manager {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "t2 i2";
+    margin-bottom: 20px;
+    margin: 0;
+    .manager-text {
+      grid-area: t2;
+      margin-top: 5.8rem;
+      width: 90%;
+    }
+    .manager-image {
+      grid-area: i2;
+      margin-left: 0;
+    }
+  }
+  .ceo {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "i3 t3";
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    .ceo-text {
+      grid-area: t3;
+      margin-top: 9rem;
+      width: 90%;
+    }
+    .ceo-image {
+      grid-area: i3;
+      width: 97.8%;
+    }
+  }
+  .founder {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "t4 i4";
+    margin: 0;
+    margin-bottom: 20px;
+    .founder-text {
+      margin-top: 9.4rem;
+      width: 90%;
+      grid-area: t4;
+    }
+    .founder-image {
+      grid-area: i4;
+      height: 450px;
+      margin-left: 0rem;
+    }
+  }
+  .lise {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "i5 t5";
+    margin: 0;
+    margin-bottom: 20px;
+    .lise-text {
+      grid-area: t5;
+      margin-top: 12rem;
+      width: 90%;
+    }
+    .lise-image {
+      grid-area: i5;
+      width: 97.8%;
+    }
+  }
+  .person-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    .person {
+      width: 100%;
+      margin-left: 4rem;
+      .person-image {
+        width: 50%;
+      }
+      .person-text {
+        width: 50%;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        h4 {
+          margin-bottom: 15px;
+        }
+      }
     }
   }
   div {
-    margin: 5rem 10rem 5rem 15rem;
+    margin-left: 2rem;
     text-align: left;
     font-family: Arial;
     @media screen and (max-width: 320px) {
@@ -60,34 +149,34 @@ body {
       margin-top: 1rem;
       text-align: center;
     }
-    p {
-      color: grey;
+  }
+  p {
+    color: grey;
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    @media screen and (max-width: 320px) {
+      margin: 0;
       margin-top: 20px;
-      font-size: 1rem;
-      line-height: 1.8rem;
-      @media screen and (max-width: 320px) {
-        margin: 0;
-        margin-top: 20px;
-        width: 80%;
-        font-size: 0.9rem;
-      }
-      @media screen and (max-width: 568px) {
-        margin: 0;
-        margin-top: 20px;
-        width: 60%;
-        font-size: 0.9rem;
-      }
-      @media screen and (max-width: 768px) {
-        margin: 0;
-        margin-top: 20px;
-        width: 42%;
-        font-size: 0.9rem;
-        margin-left: 13.9rem;
-      }
+      width: 80%;
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 568px) {
+      margin: 0;
+      margin-top: 20px;
+      width: 60%;
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      margin-top: 20px;
+      width: 42%;
+      font-size: 0.9rem;
+      margin-left: 13.9rem;
     }
   }
   span {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     @media screen and (max-width: 320px) {
       margin: 0;
       font-size: 1rem;
