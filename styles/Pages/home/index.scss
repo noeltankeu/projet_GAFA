@@ -122,7 +122,7 @@
     }
 
     .about{
-        padding-top: 50px;
+        padding-top: 50px;   
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         display: grid;
         grid-template-columns: 40% 60%;
@@ -132,8 +132,10 @@
             justify-content: center;
             h5{
              text-transform: uppercase;
-             color: rgba(0, 0, 0, 0.5);
-             margin-bottom: 15px;
+             color: black;
+             margin-bottom: 20px;
+             font-weight: bold;
+             font-size: 1.5rem;
             }
             h4{
                 text-transform: capitalize;
@@ -141,16 +143,16 @@
                 margin-bottom: 20px;
             }
             p{
-                text-align: justify;
+                text-align: left;
                 margin-bottom: 50px;
-                line-height: 1.5rem;
+                line-height: 2rem;
             }
         }
         .image{
-            margin-left: 50px;
+            margin-left: 150px;
             img{
-                height: 500px;
-                width: 100%;   
+                height: 350px;
+                width: 90%;   
             }
         }
 
@@ -162,22 +164,24 @@
     .team{
         
         display: grid;
-        grid-template-columns: 55% 45%;
-        margin-top: 5rem ;
+        grid-template-columns: 50% 50%;
+        margin-top: 3rem ;
         img{
-            height: 500px;
-            width: 100%;
+            height: 350px;
+            width: 90%;
         }
         .test-team{
-            margin: 0 0 0 100px;
+            margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
           
             h5{
                 text-transform: uppercase;
-                color: rgba(0, 0, 0, 0.5);
-                margin-bottom: 15px;
+             color: black;
+             margin-bottom: 20px;
+             font-weight: bold;
+             font-size: 1.5rem;
                }
                h4{
                    text-transform: capitalize;
@@ -187,7 +191,8 @@
                p{
                    text-align: justify;
                    margin-bottom: 50px;
-                   line-height: 1.5rem;
+                   line-height: 2rem;
+                   width: 90%;
                }
                #but1{
                 width: 30%;
@@ -207,7 +212,7 @@
             h3{
                 text-transform: capitalize;
                    font-weight: bold;
-                   margin-bottom: 20px;
+                   margin: 30px auto 0 auto;
                    text-align: center;
                    font-size: 2rem;
                    letter-spacing: 2px;
@@ -237,5 +242,85 @@
             }
         }
     }
+
+
+
+    .services {
+        
+        width: 95%;
+        margin: 0 auto;
+        .impro{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        h5 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          margin-top: 50px;
+          text-transform: uppercase;
+          word-spacing: 3px;
+        }
+        h3 {
+          text-align: center;
+          font-size: 1.3rem;
+          margin-top: 15px;
+          width: 80%;
+          font-weight: 100;
+        }
+        .sercivecadre {
+          width: 70%;
+          margin: 0 auto 30px auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas:
+            "z1 z2 z3"
+            "z4 z5 z6";
+          .support {
+            grid-area: z1;
+            margin: 10px 50px 0 0;
+          }
+          .stategy {
+            grid-area: z2;
+            margin: 10px 10px 0 10px;
+          }
+          .Management {
+            grid-area: z3;
+            margin: 10px 0 0 50px;
+          }
+          .Training {
+            grid-area: z4;
+            margin: 0 50px 10px 0;
+          }
+          .Consulting {
+            grid-area: z5;
+            margin: 0 10px 10px 10px;
+          }
+          .Events {
+            grid-area: z6;
+            margin: 0 0 10px 50px;
+          }
+      
+          img {
+            height: 100px;
+            width: 100%;
+            margin-top: 50px;
+          }
+          h2 {
+            margin-top: 15px;
+          }
+          p {
+            text-align: left;
+            margin-top: 20px;
+            width: 100%;
+          }
+        }
+      }
+
 }
+    
 
