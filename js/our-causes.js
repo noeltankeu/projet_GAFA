@@ -3,8 +3,8 @@ let btnList = document.querySelectorAll(".read-more");
 
 //alert(btnList[0].parentElement.parentElement.nextElementSibling.nextElementSibling.getElementsByTagName('li')[0].innerHTML);
 
-btnList.forEach((btn)=>{
-    btn.addEventListener("click", (e)=>{
+btnList.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
         const descriptionDiv = btn.parentElement.parentElement.nextElementSibling.nextElementSibling;
 
         const image = descriptionDiv.previousElementSibling.previousElementSibling.getElementsByTagName("img")[0].getAttribute("src");
@@ -20,8 +20,8 @@ btnList.forEach((btn)=>{
         localStorage.setItem('goals', goals);
         localStorage.setItem('governance', governance);
         localStorage.setItem('objectives', objectives);
-        
+
         window.location.href = "../Pages/project.html";
 
-    });  
+    });
 });

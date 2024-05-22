@@ -4,12 +4,6 @@
 @import "../../layouts/footer";
 @import "../../components/buttons";
 
-@media screen and (max-width: 568px) {
-  nav {
-    overflow: hidden;
-  }
-}
-
 @include headerContainerFormat;
 
 .header-container {
@@ -53,14 +47,32 @@
     margin: 1rem 0;
   }
 
+  @media screen and (max-width: 568px) {
+    height: 360px;
+  }
+
   .project-main {
     border: 1px solid rgb(224, 222, 222);
-    width: 80%;
+    width: 60%;
+    height: 600px;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+      height: 500px;
+      width: 80%;
+    }
+
+    @media screen and (max-width: 568px) {
+      height: 320px;
+    }
+
+    @media screen and (max-width: 320px) {
+      height: 260px;
+    }
+
     img {
-      height: 520px;
       width: 100%;
+      height: 600px;
 
       &:hover {
         cursor: pointer;
@@ -68,11 +80,15 @@
         transition: 0.2s;
       }
 
+      @media screen and (max-width: 768px) {
+        height: 500px;
+      }
+
       @media screen and (max-width: 568px) {
-        height: 420px;
+        height: 320px;
       }
       @media screen and (max-width: 320px) {
-        height: 320px;
+        height: 260px;
       }
     }
 
@@ -139,6 +155,10 @@
     a {
       color: black;
       font-size: 1.5rem;
+      &:hover {
+        color: $color-blue;
+        font-weight: 300;
+      }
 
       @media screen and (max-width: 568px) {
         font-size: 1.2rem;
