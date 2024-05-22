@@ -4,9 +4,13 @@
 @import "../../../layouts/footer";
 @import "../../../components/buttons";
 
+
+@media screen and (max-width: 728px) {
+  nav {
+    overflow: hidden;
+
 .header-container {
   width: 95%;
-
   min-height: 450px;
   height: 480px;
   max-height: 500px;
@@ -24,8 +28,11 @@
     min-height: 300px;
     height: 450px;
     max-height: 500px;
+
   }
 }
+
+@include headerContainerFormat;
 
 .header-content {
   width: 70%;
@@ -43,8 +50,13 @@
   font-size: 20px;
   text-align: justify;
 
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
   .projects-intro {
     text-align: center;
+    line-height: 50px;
 
     h4 {
       padding-bottom: 0.8rem;
@@ -57,11 +69,27 @@
     h2 {
       font-size: 2.5rem;
       font-weight: 200;
+
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        line-height: 35px;
+      }
+      @media screen and (max-width: 320px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
   .project-main {
     padding: 0 50px;
+
+    @media screen and (max-width: 568px) {
+      padding: 0 20px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 1rem;
+      padding: 0 5px;
+    }
 
     .introduction,
     .goals,
@@ -100,6 +128,65 @@
       img {
         display: block;
         margin: 2rem auto;
+      }
+    }
+
+    .imageFlex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+      margin: 0 auto;
+
+      @media screen and (max-width: 320px) {
+        flex-direction: column;
+      }
+
+      img {
+        height: 350px;
+        width: 400px;
+
+        @media screen and (max-width: 768px) {
+          height: 300px;
+          width: 280px;
+        }
+
+        @media screen and (max-width: 568px) {
+          height: 230px;
+          width: 230px;
+        }
+
+        @media screen and (max-width: 320px) {
+          height: 200px;
+          width: 80%;
+        }
+      }
+    }
+
+    figure {
+      margin-bottom: 1.5rem;
+      img {
+        height: 400px;
+
+        @media screen and (max-width: 768px) {
+          height: 300px;
+          width: 350px;
+        }
+        @media screen and (max-width: 320px) {
+          height: 200px;
+          width: 85%;
+        }
+      }
+
+      figcaption {
+        font-family: cursive;
+        margin-top: -30px;
+        text-align: center;
+        color: black;
+        font-size: 0.8em;
+        @media screen and (max-width: 320px) {
+          line-height: 1.2rem;
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
 
-window.addEventListener("load", ()=>{
+window.addEventListener("load", () => {
 
     const image = localStorage.getItem('image');
     const title = localStorage.getItem('title');
@@ -16,12 +16,13 @@ window.addEventListener("load", ()=>{
     const objectivesDiv = document.querySelector('.objectives');
 
 
-    imageDiv.style.background="url("+image +")";
+    imageDiv.style.background = "url(" + image + ")";
     titleDiv.innerHTML = title;
     introDiv.getElementsByTagName("p")[0].innerHTML = intro;
     goalsDiv.getElementsByTagName("p")[0].innerHTML = goals;
     governanceDiv.getElementsByTagName("p")[0].innerHTML = governance;
-    objectivesDiv .getElementsByTagName("p")[0].innerHTML = objectives;
+    objectivesDiv.getElementsByTagName("p")[0].innerHTML = objectives;
 
     //alert(introDiv);
 });
+

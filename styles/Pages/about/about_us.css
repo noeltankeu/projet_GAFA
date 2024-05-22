@@ -1,6 +1,6 @@
 @font-face {
   font-family: "allura";
-  src: url(../fonts/Allura/Allura-Regular.ttf);
+  src: url("../fonts/Allura/Allura-Regular.ttf");
 }
 * {
   margin: 0;
@@ -24,11 +24,29 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 
-nav {
+@media screen and (max-width: 768px) {
+  nav {
+    overflow: hidden;
+  }
+}
+nav h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
   display: flex;
+
+nav {
   justify-content: space-between;
   align-items: center;
   width: 95%;
+
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
   height: 15vh;
   margin: 0 auto;
 }
@@ -37,32 +55,63 @@ nav .nav-list ul {
   justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
-}
-nav .nav-list ul li {
-  margin-left: 20px;
-}
-nav .nav-list ul li:first-child {
-  color: blue;
-}
-nav .nav-list ul li a:hover {
-  transition: 0.3s;
-  cursor: pointer;
-  font-weight: bold;
-  color: blue;
+  margin: 30px;
 }
 @media screen and (max-width: 768px) {
-  nav .nav-list li {
-    margin-left: 5px;
+  nav .nav-list ul {
+    margin: 10px;
+  }
+}
+nav .nav-list ul li {
+  padding: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-list ul li {
+    padding: 10px;
+  }
+}
+
+nav .nav-list ul li a:hover {
+  transition: 0.3s;
+
+nav .nav-list ul li:hover {
+  border-bottom: 3px solid blue;
+
+  cursor: pointer;
+}
+nav .nav-list ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-list ul li a {
     font-size: 0.8rem;
-    text-align: center;
   }
-  nav .nav-list h2 {
-    font-size: 1rem;
+}
+@media screen and (max-width: 668px) {
+  nav .nav-list ul li a {
+    font-size: 0.7rem;
   }
+}
+@media screen and (max-width: 320px) {
+  nav .nav-list ul li a {
+    font-size: 0.6rem;
+  }
+}
+nav .nav-list ul li a:hover {
+  color: blue;
 }
 nav h2 {
   font-weight: bold;
   font-family: "allura";
+}
+@media screen and (max-width: 768px) {
+  nav h2 {
+    font-size: 1rem;
+  }
 }
 nav i {
   position: absolute;
@@ -75,6 +124,11 @@ nav i {
     display: none;
   }
 }
+nav #donate {
+  position: fixed;
+  top: -100px;
+  right: 100px;
+}
 
 footer {
   height: 465px;
@@ -82,10 +136,24 @@ footer {
   background-color: rgb(245, 245, 245);
   margin: 0 auto;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+
 }
 footer h2 {
   font-size: 3rem;
@@ -106,6 +174,12 @@ footer p {
   line-height: 30px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 footer .partner {
   margin-top: 4rem;
   display: flex;
@@ -113,9 +187,34 @@ footer .partner {
   align-items: center;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  footer .partner {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer .partner {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
 footer .partner h5 {
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  footer .partner .img-foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer .partner .img-foot {
+    display: grid;
+    gap: 10px;
+  }
 }
 footer .partner .img-foot img {
   margin-right: 15px;
@@ -123,14 +222,71 @@ footer .partner .img-foot img {
   height: 80px;
   transition: 0.3s;
 }
+@media screen and (max-width: 568px) {
+  footer .partner .img-foot img {
+    width: 50px;
+    height: 50px;
+  }
+}
 footer .partner .img-foot img:hover {
+
   transform: scale(1.5);
+
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+
 }
 @media screen and (max-width: 768px) {
   footer .partner .img-foot img:hover {
-    margin-right: 5px;
     width: 40px;
     height: 40px;
+  }
+}
+footer .copyright {
+  background: rgb(245, 245, 245);
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+footer .copyright .footer-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.5rem;
+  width: 20%;
+  margin: 10px auto;
+  padding: 5px;
+  background: rgb(204, 202, 201);
+  border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  footer .copyright .footer-logos {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer .copyright .footer-logos {
+    font-size: 1rem;
+    width: 40%;
+  }
+}
+footer .copyright .footer-logos i:hover {
+  color: rgb(4, 55, 242);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+footer .copyright .copyright-text {
+  background: rgb(204, 202, 201);
+  padding: 5px;
+}
+@media screen and (max-width: 568px) {
+  footer .copyright .copyright-text {
+    font-size: 0.8rem;
   }
 }
 
